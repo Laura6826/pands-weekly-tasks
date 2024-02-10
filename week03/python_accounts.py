@@ -7,6 +7,7 @@ account_number = input('Please enter a 10 digit account number: ')
 
 clean_account_number = account_number.strip()
 #  the strip() comand was used, to remove any uncessary white space.
+
 hidden_account_number = 'x' * 6 + clean_account_number [6:]
 # the splicing code is used to highlight the numbers that we want to be replaced by x's.
 
