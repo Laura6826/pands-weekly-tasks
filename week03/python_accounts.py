@@ -16,7 +16,7 @@ if len(clean_account_number) == 10 and clean_account_number.isdigit():
 else:
     print ('Invalid account number entered. Please enter a valid 10 digit number.')
     # we want to ensure that the number entered only contains exactly 10 numerical characters only.
-    # Reference: https://www.w3schools.com/python/ref_string_isnumeric.asp 
+    # Reference: https://www.w3schools.com/python/ref_string_isdigit.asp 
 
 
 
