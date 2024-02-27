@@ -13,7 +13,7 @@ def collatz_sequence (x):
         if (x % 2) ==0:         # If 'x' is divided by 2 and the answer is 0, the number entered is an even number. 
                                 # Proceed to divide the number by 2.
             x= x //2
-            sequence.append(x)  # Append 'sequence', to refect the calculation applied.
+            sequence.append(x)  # Appendthe list named 'sequence', to refect the calculation applied. Lecture 5: List and Tuples.
                                 # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:16)
         else:
             x = (x*3) +1        # If, when 'x' is divided by 2 and the answer is not 0, the number entered must be an odd number.
