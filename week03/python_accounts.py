@@ -11,12 +11,13 @@ clean_account_number = account_number.strip()
 hidden_account_number = 'x' * 6 + clean_account_number [6:]
 # the splicing code is used to highlight the numbers that we want to be replaced by x's.
 
-if len(clean_account_number) == 10 and clean_account_number.isdigit():
+if len(clean_account_number) == 10 and clean_account_number.isdigit(): 
+    # Print the final number 'if' the entered number contains 10 intgers only
+    # Reference: w3schools https://www.w3schools.com/python/ref_stringisdigit.asp 
     print(hidden_account_number)
 else:
     print ('Invalid account number entered. Please enter a valid 10 digit number.')
-    # we want to ensure that the number entered only contains exactly 10 numerical characters only.
-    # Reference: https://www.w3schools.com/python/ref_string_isdigit.asp 
+   
 
 
 
