@@ -1,4 +1,4 @@
-<span style="color:blue"># My Weekly Tasks Repository for Module: Programming and Scripting</span>
+# <span style="color:blue">My Weekly Tasks Repository for Module: Programming and Scripting</span>
 ## *Author: Laura Lyons*
 ***
 ## **Introduction**
