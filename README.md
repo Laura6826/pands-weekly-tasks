@@ -1,7 +1,6 @@
-# My Weekly Tasks Repository for Module: Programming and Scripting
-***
+<span style="color:blue"># My Weekly Tasks Repository for Module: Programming and Scripting</span>
 ## *Author: Laura Lyons*
-
+***
 ## **Introduction**
 ***
 This repository is a collection of work, complete as part of the H.Dip programme, Higher Diploma in Science in Data Analytics, Module: Programming and Scripting.
