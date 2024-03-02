@@ -7,8 +7,7 @@ This repository is a collection of work, complete as part of the H.Dip programme
 
 Each week, a progam will need to be generated to complete a preassigned task.
 
-## **Week 01**
-###helloworld.py***
+## **Week 01** helloworld.py
 ---
 
 1. Create a GitHub account and repository for yourself (pands-mywork), and the weekly task (pands-weekly-tasks)
