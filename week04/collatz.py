@@ -11,13 +11,13 @@ def collatz_sequence (num):       # Reference: O'Reilly (2015) A Whirlwind Tour 
     sequence = [num]              # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:8)
     while num!= 1:                # while 'x' is not equal to 1,
         if (num % 2) ==0:         # If 'x' is divided by 2 and the answer is 0, the number entered is an even number. 
-                                # Proceed to divide the number by 2.
+                                  # Proceed to divide the number by 2.
             num= num //2
             sequence.append(num)  # Appendthe list named 'sequence', to refect the calculation applied. Lecture 5: List and Tuples.
-                                # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:16)
+                                  # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:16)
         else:
-            num = (num*3) +1        # If, when 'x' is divided by 2 and the answer is not 0, the number entered must be an odd number.
-                                # Proceed to multiply the entered number by 3 and then add 1. 
+            num = (num*3) +1      # If, when 'x' is divided by 2 and the answer is not 0, the number entered must be an odd number.
+                                  # Proceed to multiply the entered number by 3 and then add 1. 
             sequence.append(num)  # Append 'sequence', to refect the calculation applied.
     return sequence
        
