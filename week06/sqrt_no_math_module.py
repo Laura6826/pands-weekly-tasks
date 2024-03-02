@@ -10,11 +10,14 @@
 # The application of the Newton Method for square roots formula was extropolated from 
 # https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python. 
 
-def is_close(num1, num2, tolerance=0.001): 
-    return abs(num1 - num2) < tolerance
+# The math.isclose () method checks whether two values are close to each other, or not.
+# To avoid using the math module, I defined is_close() and refered to this definition within the code.
+# Reference: https://www.w3schools.com/python/ref_math_isclose.asp
+def is_close(num1, num2, tolerance=0.001):  
+    return abs(num1 - num2) < tolerance     
 
 def newtons_method_sqrt(num, estimate): # We need to apply the 'Newtons method formula', to create a new_estimate.
-    new_estimate = (((num/estimate)+ estimate)/ 2) 
+    new_estimate = ((estimate +(num/ estimate))/ 2) 
     # We can now use a 'Built in Function', the 'if' statement to compare our estimates.
 
     if is_close(estimate, new_estimate):
