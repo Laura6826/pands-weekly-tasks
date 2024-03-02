@@ -93,6 +93,8 @@ Write a program that outputs whether or not today is a weekday. (The program sho
  - All other variables within the range would be treated as the weekend using the *else* statement.
   - If the day was identified as the weekend, the print out would read as 'Today is '*day_of_week'. Hurrah, go back to bed!'.
 
- ## **Week 06** - .py
+ ## **Week 06** - sqrt.py
 ---
+Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
+You should create a function called <tt>sqrt</tt> that does this.
