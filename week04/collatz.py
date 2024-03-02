@@ -22,7 +22,9 @@ def collatz_sequence (num):       # Reference: O'Reilly (2015) A Whirlwind Tour 
     return sequence
        
 
-guess= int(input('Please enter a positive integer: ')) # We need into check that the value entered is a positive integer
+guess= int(input('Please enter a positive integer: ')) 
+# We need into check that the value entered is a positive integer
+
 while guess <= 0:
     guess = int(input('That is not a positive integer. Please enter a positive integer:'))
 else:
