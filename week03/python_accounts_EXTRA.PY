@@ -11,18 +11,19 @@ clean_account_number = account_number.strip()
 #  the strip() comand was used, to remove any uncessary white space.
 
 hidden_account_part= 'x' * (len(clean_account_number) - 4)
-# "Elements from a list can be accessed with a negative number, starting with -1" Lecture 5, List Indexing
+# "Elements from a list can be accessed with a negative number, starting with -1" Lecture 5, List Indexing.
 
 visible_account_part = clean_account_number[-4:]
 output_account_number = (f'{hidden_account_part}{visible_account_part}')
-# the splicing code is used to highlight the numbers that we want to be replaced by x's.
-# I used negative splicing to replace the last 4 digits with x's.
+# Splicing code is used to highlight the numbers that we want to be replaced by x's.
+# I used negative splicing to replace the last 4 digits with x's, as technically, we cannot anticipate the number of digits
+# the user might enter.
 
 if clean_account_number.isdigit():
     print(output_account_number)
 else:
     print ('Invalid account number entered. Please enter a valid account number.')
-    # we want to ensure that the number entered only contains exactly 10 numerical characters.
+    # we want to ensure that the number entered only contains numerical characters.
     # Reference: https://www.w3schools.com/python/ref_string_isdigit.asp 
 
 
