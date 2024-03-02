@@ -8,10 +8,10 @@ This repository is a collection of work, complete as part of the H.Dip programme
 Each week, a progam will need to be generated to complete a preassigned task.
 
 ## **Week 01**
+###helloworld.py***
 ---
 
 1. Create a GitHub account and repository for yourself (pands-mywork), and the weekly task (pands-weekly-tasks)
-
 2. Commit and push a file to the weekly tasks repository called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
 
 **My notes:**
@@ -24,14 +24,11 @@ Write a program called bank.py.
 The program should:
 
  - Prompt the user and read in two money amounts (in cent).
-
  - Add the two amounts.
-
  - Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount.
 
 **My notes:**
  - As the input is entered as a whole number, I divided by 100, to get the decimal point in the appropriate position. This is not the most appropriate method, i hope to come across a more suitable method as the course progresses.
-
  - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python). 
 
 ## **Week 03**
