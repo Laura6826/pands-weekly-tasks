@@ -7,18 +7,18 @@
 # Author: Laura Lyons
 
 
-def collatz_sequence (x):       # Reference: O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)
-    sequence = [x]              # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:8)
-    while x!= 1:                # while 'x' is not equal to 1,
-        if (x % 2) ==0:         # If 'x' is divided by 2 and the answer is 0, the number entered is an even number. 
+def collatz_sequence (num):       # Reference: O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)
+    sequence = [num]              # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:8)
+    while num!= 1:                # while 'x' is not equal to 1,
+        if (num % 2) ==0:         # If 'x' is divided by 2 and the answer is 0, the number entered is an even number. 
                                 # Proceed to divide the number by 2.
-            x= x //2
-            sequence.append(x)  # Appendthe list named 'sequence', to refect the calculation applied. Lecture 5: List and Tuples.
+            num= num //2
+            sequence.append(num)  # Appendthe list named 'sequence', to refect the calculation applied. Lecture 5: List and Tuples.
                                 # Reference: O'Reilly (2015) A Whirlwind Tour of Python (pg:16)
         else:
-            x = (x*3) +1        # If, when 'x' is divided by 2 and the answer is not 0, the number entered must be an odd number.
+            num = (num*3) +1        # If, when 'x' is divided by 2 and the answer is not 0, the number entered must be an odd number.
                                 # Proceed to multiply the entered number by 3 and then add 1. 
-            sequence.append(x)  # Append 'sequence', to refect the calculation applied.
+            sequence.append(num)  # Append 'sequence', to refect the calculation applied.
     return sequence
        
 
