@@ -44,7 +44,7 @@ Modify the program to deal with account numbers of any length ( comment your ass
   - The -4, will represent the *visible_account part*.
  - Splicing code is used to highlight the numbers that we want to be replaced by x's.
  - Negative splicing was used to replace the last 4 digits with x's, as technically, we cannot anticipate the number of digits the user might enter.
- - We used **isdigit()** command to ensure that the input was valid, and only contained integers.
+ - We used **isdigit()** command to ensure that the input was valid, and only contained integers. Reference: https://www.w3schools.com/python/ref_string_isdigit.asp 
  - An **if** and **else** conditional statement was used to determine which reponse to print in the output.
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
   - If the input is incorrect, ie contains letters or symbols, print, 'Invalid account number entered. Please enter a valid account number.'
@@ -60,7 +60,7 @@ Write a program, called collatz.py, that asks the user to input any positive int
 Push the program in your pands-weekly-tasks GitHub repository 
 
 **My notes:**
-- The **def** function was used to break the task into manageable chunks, and it will only run when called upon.
+- The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)
 - As the program must end when the current value equals 1, we use the **while* loop, so that the function will continue to run until the end result is 1.
 - To check if the number is odd or even, as these numbers will be 'treated differently', we use an **if** statement. 
  - **if** (x % 2) == 0, if, when x is divided by 2, it equals 0, we know this is an even number.
