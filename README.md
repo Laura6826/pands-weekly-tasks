@@ -42,14 +42,14 @@ Extra:
 Modify the program to deal with account numbers of any length ( comment your assumptions)
 
 **My notes:**
- - The strip() comand was used, to remove any uncessary white space.
- - The input was then'subdivided into two parts, the hidden_account_part and the visisble_account_part.
-  - The length of the hidden account part will be determined by the using the len() code, minus 4, replaced the digits with x's.
-  - The -4, will represent the visible_account part.
+ - The **strip()** comand was used, to remove any uncessary white space.
+ - The input was then'subdivided into two parts, the *hidden_account_part* and the *visisble_account_part*.
+  - The length of the *hidden account part* will be determined by the using the **len()** code, minus 4, replaced the digits with x's.
+  - The -4, will represent the *visible_account part*.
  - Splicing code is used to highlight the numbers that we want to be replaced by x's.
  - Negative splicing was used to replace the last 4 digits with x's, as technically, we cannot anticipate the number of digits the user might enter.
- - We used isdigit() command to ensure that the input was valid, and only contained integers.
- - An 'if' conditional statement was used to determine which reponse to print in the output.
+ - We used **isdigit()** command to ensure that the input was valid, and only contained integers.
+ - An **if** and **else** conditional statement was used to determine which reponse to print in the output.
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
   - If the input is incorrect, ie contains letters or symbols, print, 'Invalid account number entered. Please enter a valid account number.'
 
