@@ -27,11 +27,13 @@ def newtons_method_sqrt(num, estimate):
 
 # Check point values 'newtons_method_sqrt(20,4)'
 
-original_num= (int(input('Please enter the number you wish to retrieve the square root of: ')))
+original_num= int(input('Please enter the number you wish to retrieve the square root of: '))
 
-# We need to ensure that the input number is a positive integer only.
-while original_num <=0:
-    original_num= input('That is not a positive integer. Please enter a positive integer: ')
+# We need to ensure that the input number is a positive integer only
+
+while original_num <= 0 and isinstance(original_num, str):
+    print ('That is not a positive integer. Please enter a positive integer: "')
+    original_num = (input('Please enter the number you wish to retrieve the square root of: '))
 else:
     estimate_sqrt = (int(input('Please enter an educated guess as to the squart root of your original number: ')))
 
