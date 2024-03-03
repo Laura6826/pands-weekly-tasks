@@ -26,13 +26,19 @@ def newtons_method_sqrt(num, estimate): # We need to apply the 'Newtons method f
     else:
         return newtons_method_sqrt(num, new_estimate)
 
-original_num= (int(input('Please enter the number you wish to retrieve the square root of: ')))
-
 # We need to ensure that the input number is a positive integer only.
-while original_num <=0:
-    original_num= input('That is not a positive integer. Please enter a positive integer: ')
-else:
-    estimate_sqrt = (int(input('Please enter an educated guess as to the squart root of your original number: ')))
 
-    answer = newtons_method_sqrt (original_num, estimate_sqrt)
-    print(f'The approximate square root of {original_num} is {answer}')
+while True:
+    original_num = (input('Please enter the number you wish to retrieve the square root of: '))
+    try:
+        val= int(original_num)
+        if original_num <0:
+            print('Thats not a positive integer. Please enter a positive integer: ')
+            return original
+    except ValueError:
+        print("That's not an integer. Try again.")
+
+        estimate_sqrt = (int(input('Please enter an educated guess as to the squart root of your original number: ')))
+        
+        answer = newtons_method_sqrt (original_num, estimate_sqrt)
+        print(f'The approximate square root of {original_num} is {answer}')
