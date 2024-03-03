@@ -11,7 +11,7 @@ ammount1 = int(input('Enter ammount 1 (in cents): '))  # Initally, i called this
 # to allow us to perform mathematical operations.   
 
 ammount2 = int(input('Enter ammount 2 (in cents): '))
-answer= ((ammount1+ammount2)/100) # By dividing by 10, i will convert from cents to euro
+answer= ((ammount1+ammount2)* (10**-2)) # To convert from cents to , i will avoid dividing by 100 and instead use exponential notiation.
 print (f'The sum of these is: \N{euro sign}{answer}')
 
 # I pulled the coding for the euro symbol: \N{euro sign}, from stackoverflow.com 
