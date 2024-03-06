@@ -101,4 +101,10 @@ Write a program that takes a positive floating-point number as input and outputs
 You should create a function called <tt>sqrt</tt> that does this.
 
 **My notes:**
- -
+Research:
+- Newtons method for square roots, is a technique for finding the square root of a number by iteratively improving an initial guess References: python - Finding the square root using Newton's method (errors!) - Stack Overflow ()
+- The formula for Newtons method = square_root (original_number)= (((original_number/estimated_sqrt)+ estimated_sqrt)/2).
+
+ - 2 seperate files were created.
+   -The first *sqrt.py*, used the math module to compare the estimate value to see how close the approximations were. This was so i could get to grips with what was needed to get the basics working.
+     - The second file, *sqrt_no_mathmodule.py*, did not use formulas inported from the math module. Instead, defintions were created of the formulas necessary.
