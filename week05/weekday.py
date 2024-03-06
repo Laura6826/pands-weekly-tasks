@@ -22,7 +22,7 @@ weekday= today[:5]
 
 for today in weekday:               # The range is used to indicate which days are weekdays.
     print(f"Today is {(name_of_day[day_of_week])}.\nUnfortunately this is a weekday, go back to work!.")
-    break
+    break                           # This will ensure the code only runs once
 else:
     print(f"Today is {name_of_day[day_of_week]}.\nIts the weekend! Hurrah, go back to bed!")
     
