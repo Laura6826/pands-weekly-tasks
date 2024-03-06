@@ -9,7 +9,7 @@ from datetime import date # I searchted the internet on how generate what the cu
 
 current_day = date.today()          # We use this code to get the current date.
 day_of_week = current_day.weekday() # This code is used to tell us the specific day of the week,  (0 = Monday, sunday= 6)
-name_of_day= ('Monday', 
+name_of_day= ('Monday',             # A tuple was created to allow us create an index for the day of the week.
               'Tuesday', 
               'Wednesday', 
               'Thursday', 
