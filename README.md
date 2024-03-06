@@ -84,17 +84,21 @@ Finally, the output was printed, to include each digit generated through out the
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
  - I searchted the internet on how generate what the current day is. The datetime module provides classes for manipulating dates and times in Python. Reference: https://docs.python.org/3/library/datetime.html , https://www.w3schools.com/python/python_datetime.asp. 
- - The variable *current_day* was created to get the current day, us ing the datetime module.
+ - The variable *current_day* was created to get the current day, using the datetime module.
  - The variable *day_of_week* was created to tell if the specific day of the week.  (0 = Monday, 6 = Sunday)
- - A list was created to define the order of the weekdays, (0 = Monday, 6 = Sunday).
+ - the tuple *name_of_day* was created to define the order of the weekdays, (0 = Monday, 6 = Sunday).
+ - The variable *today* was created, to simplify the code
 
  - An *for* statement was then applied and a range defined to distinguish weekdays [0:5]. 
-  - If the day was identified as a weekend, the print out would read ' Today is '*day_of_week'. Unfortunately this is a weekday, go back to work'.
+  - If the day was identified as a weekend, the print out would read ' Today is '*(name_of_day[day_of_week])*. Unfortunately this is a weekday, go back to work'.
  - All other variables within the range would be treated as the weekend using the *else* statement.
-  - If the day was identified as the weekend, the print out would read as 'Today is '*day_of_week'. Hurrah, go back to bed!'.
+  - If the day was identified as the weekend, the print out would read as 'Today is '*(name_of_day[day_of_week])*'. Hurrah, go back to bed!'.
 
  ## **Week 06** - sqrt.py
 ---
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called <tt>sqrt</tt> that does this.
+
+**My notes:**
+ -
