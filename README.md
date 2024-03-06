@@ -88,7 +88,7 @@ Write a program that outputs whether or not today is a weekday. (The program sho
  - The variable *day_of_week* was created to tell if the specific day of the week.  (0 = Monday, 6 = Sunday)
  - A list was created to define the order of the weekdays, (0 = Monday, 6 = Sunday).
 
- - An *if* conditional statement was then applied and a range defined to distinguish weekdays [0:5]. 
+ - An *for* statement was then applied and a range defined to distinguish weekdays [0:5]. 
   - If the day was identified as a weekend, the print out would read ' Today is '*day_of_week'. Unfortunately this is a weekday, go back to work'.
  - All other variables within the range would be treated as the weekend using the *else* statement.
   - If the day was identified as the weekend, the print out would read as 'Today is '*day_of_week'. Hurrah, go back to bed!'.
