@@ -16,13 +16,14 @@ name_of_day= ('Monday',             # A tuple was created to allow us create an 
               'Friday', 
               'Saturday', 
               'Sunday')
+
 today= (name_of_day[day_of_week])
 
-weekday= today[:5]
+weekend= today[5:7]                 # The range is used to indicate which days are weekdays.              
 
-for today in weekday:               # The range is used to indicate which days are weekdays.
-    print(f"Today is {(name_of_day[day_of_week])}.\nUnfortunately this is a weekday, go back to work!.")
+for today in weekend:  
+    print(f"Today is {(name_of_day[day_of_week])}.\nIts the weekend! Hurrah, go back to bed!")
     break                           # This will ensure the code only runs once
 else:
-    print(f"Today is {(name_of_day[day_of_week])}.\nIts the weekend! Hurrah, go back to bed!")
+    print(f"Today is {(name_of_day[day_of_week])}.\nUnfortunately this is a weekday, go back to work!.")
     
