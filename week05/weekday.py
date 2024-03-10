@@ -1,4 +1,4 @@
-# Weekly Task, 5. weekday.py
+# Weekly Task 05. weekday.py
 # The aim of this program is to output wether or not today is a weekday or the weekend.
 # Author: Laura Lyons
 

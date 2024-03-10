@@ -1,4 +1,4 @@
-# collatz.py
+# Weekly Task 04. collatz.py. 
 # The aim of this program is to ask the user to input any positive integer and to read out the successive values
 # following the application of specific calculations
 # If the integer is even, divide it by two

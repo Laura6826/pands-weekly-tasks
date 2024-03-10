@@ -1,4 +1,4 @@
-# python_accounts.py, weekly task number 3
+# Weekly task 03. python_accounts.py.
 # The aim of this program is to read in a 10 digit bank account number and to output
 # the account number, with the first 6 digits replaced with 'x' only the last four digits visible.
 # Author: Laura Lyons

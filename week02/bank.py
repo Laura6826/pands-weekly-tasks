@@ -1,11 +1,10 @@
-# bank.py Week 02 Task
+# Weekly task 02. bank.py 
 # The aim of this program is to prompt the user and read in two money amounts (in cents), 
 # add the two ammounts and print the answer.
 # Author: Laura Lyons
 
 ammount1 = int(input('Enter ammount 1 (in cents): '))  # Initally, i called this variable 'x' however, 
 # after learning about global varialbes, i will re-name it ammount1 (similar for ammount2)
-
 
 # input reads in a string so we need to convert to an integer
 # to allow us to perform mathematical operations.   
