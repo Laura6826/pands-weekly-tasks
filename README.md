@@ -112,5 +112,12 @@ Research:
 ## **Week 07** - .py
 ---
 Write a program that reads in a text file and outputs the number of e's it contains. 
-
 The program should take the filename from an argument on the command line. 
+
+## **Week 07** - plottask.py
+---
+Write a program called plottask.py that displays:
+- a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+- and a plot of the function  h(x)=x3 in the range 0 to 10, 
+,on the one set of axes.
+
