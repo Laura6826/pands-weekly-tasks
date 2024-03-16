@@ -5,24 +5,25 @@
 
 # I decided to create a second program for the EXTRA part of this task, so as not to interfer with the original program.
 
-account_number = input('Please enter your account number: ')
-
-clean_account_number = account_number.strip()
+account_number = input('Please enter your account number: ').strip()
 #  the strip() comand was used, to remove any uncessary white space.
 
-hidden_account_part= 'x' * (len(clean_account_number) - 4)
+hidden_account_part= 'x' * (len(account_number) - 4)
 # "Elements from a list can be accessed with a negative number, starting with -1" Lecture 5, List Indexing.
 
-visible_account_part = clean_account_number[-4:]
+visible_account_part = account_number[-4:]
 output_account_number = (f'{hidden_account_part}{visible_account_part}')
 # Splicing code is used to highlight the numbers that we want to be replaced by x's.
 # I used negative splicing to replace the last 4 digits with x's, as technically, we cannot anticipate the number of digits
 # the user might enter.
 
-if clean_account_number.isdigit():
-    print(output_account_number)
+while not account_number.isdigit():
+   account_number = input ('Invalid account number entered. Please enter a valid account number.')
+   hidden_account_part= 'x' * (len(account_number) - 4)
+   visible_account_part = account_number[-4:]
+   output_account_number = (f'{hidden_account_part}{visible_account_part}') 
 else:
-    print ('Invalid account number entered. Please enter a valid account number.')
+    print (output_account_number)
     # we want to ensure that the number entered only contains numerical characters.
     # Reference: https://www.w3schools.com/python/ref_string_isdigit.asp 
 
