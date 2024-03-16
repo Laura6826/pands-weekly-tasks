@@ -6,7 +6,6 @@
 
 import matplotlib.pyplot as plt             # matplotlib is used to create plots.
 import numpy as np                          # was used to help generate random numbers.
-import math                                 # matho will be used to get the log of the y axis of the second plot.
 
 # Plot 1
 normal_data= np.random.normal(loc=5, scale= 2, size= 1000) 
