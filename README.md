@@ -114,10 +114,38 @@ Research:
 Write a program that reads in a text file and outputs the number of e's it contains. 
 The program should take the filename from an argument on the command line. 
 
-## **Week 07** - plottask.py
----
+## **Week 08** - plottask.py
+___
 Write a program called plottask.py that displays:
 - a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
 - and a plot of the function  h(x)=x3 in the range 0 to 10, 
 ,on the one set of axes.
+
+A number of libraries were imported to help with this weeks task.
+ 1. matplotlib is used to create plots.
+ 2. Numpy was used to help generate random numbers.
+
+To help get my heaad around this weeks tasks, i subdivided the task into creating 2 different plots.
+### Plot 1
+A random number generator was used to help generate the numbers needed for this task:
+ - *normal_data= np.random.normal (loc=5, scale= 2, size= 1000)* 
+ - where loc= mean/ average, scale = standard deviation, size= the number of values to be generated.
+The plot was then created using the *plt.hist* function. The color of the legend was defined and a black edge was applied to each of the bins to help differentiate each category.
+ 
+Once the first plot was generated, and i was happy with the appearence of the plot,i started to research how to create plot 2.
+
+### Plot 2
+The second plot involved creating a plot for the function  *h(x)=x^3*
+
+As the task stated that the integers should be within the range (0-10), we using *numpy* to help define the data set.
+- The data to be displayed on the x-axis was defined using the function, *h_x= np.array(range(0,10))*.
+- The data to be displayed on the x-axis was defined using the function, *ypoints = h_x**3*.
+The plot was then created using the *plt.plot* function, as we wanted this data to be displayed as a line. 
+
+A title, x  and y axis labels and a ledged added to the plot.
+
+The plot was then saved using the *plt.savefig()* function.
+
+On this plot, the y-axis was *log* transformed, to make the plot easier to read and more visually appealing (Plot_task_1axis.log). 
+
 
