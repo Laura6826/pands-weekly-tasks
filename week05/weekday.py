@@ -1,5 +1,5 @@
 # Weekly Task 05. weekday.py
-# The aim of this program is to output wether or not today is a weekday or the weekend.
+# The aim of this program is to output if today is a weekday or the weekend.
 # Author: Laura Lyons
 
 from datetime import date # I searchted the internet on how generate what the current day is. 
@@ -22,4 +22,6 @@ if day_of_week <5:
     #break                           # This will ensure the code only runs once
 else:
     print(f"Today is {(name_of_day[day_of_week])}.\nIts the weekend! Hurrah, go back to bed!")
+
+    
     
