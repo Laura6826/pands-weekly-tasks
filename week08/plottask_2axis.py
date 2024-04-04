@@ -20,7 +20,7 @@ ypoints = h_x ** 3                          # ** will raise to the power of 3.
 fig, ax1 = plt.subplots()                   # This is how i am trying to create a secondary y axis due to the differing variation of the plots.
 
 ax1.hist(normal_data, label='Histogram of a normal distribution.\n(Mean= 5, St.dev.= 2)', color='blue', edgecolor='black' )                       
-# This indicated that we want plot 1 to be a histogram. Adding an edge colour to the bins will mae them easier to differentiate.
+# This indicated that we want plot 1 to be a histogram. Adding an edge colour to the bins will make them easier to differentiate.
 
 ax1.set_xlabel('Values', color='blue')      # This will create a blue x-axis label, for plot 1.  
 ax1.set_ylabel('Frequency', color='blue')   # This will create a blue y-axis label, for plot 1.
