@@ -1,4 +1,4 @@
-# <span style="color:blue">My Weekly Tasks Repository for Module: Programming and Scripting</span>
+# <span style="color:blue">Repository for Module: Programming and Scripting</span>
 ## *Author: Laura Lyons*
 ***
 ## **Introduction**
@@ -18,18 +18,17 @@ By in general, a progam will need to be generated to complete a preassigned task
   7. [Week 07- Files](#week-07---py)
   8. [Week 08- Looking ahead](#week-08---plottaskpy)
 
-### **Week 01** -helloworld.py
 ---
-
+### **Week 01** -helloworld.py
 **Asignment Instructions**
 1. Create a GitHub account and repository for yourself (pands-mywork), and the weekly task (pands-weekly-tasks)
 2. Commit and push a file to the weekly tasks repository called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
 
 **My notes:**
 - Ensure care is taken when entering the output, ie ensure you include appropriate spaces and colons.
+---
 
 ### **Week 02** - bank.py.
----
 **Asignment Instructions**
 Write a program called bank.py.
 
