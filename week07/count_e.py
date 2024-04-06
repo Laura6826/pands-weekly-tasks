@@ -2,9 +2,8 @@
 # The aim of this program is to write a program that reads in a text file and outputs the number of e's it contains.
 # Author: Laura Lyons
 
-
 def count_e(filename): # It is necessary to create a module to count the number of 'e's in predefinied file.
-    try:                                        # We use the 'try' command so that we can 
+    try:                                        # We use the 'try' command
         with open (filename, 'r') as f:         # The file is opened in the 'read' mode.
             content = f.read()                  # The f.read() command is used to access the file content.
             e_count = content.lower().count('e')        # The count() command was used to count the number of 'e's present in the text.
