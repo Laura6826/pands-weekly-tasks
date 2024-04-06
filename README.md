@@ -16,11 +16,12 @@
   8. [Week 08- Looking ahead](#week-08---plottaskpy)
 ---
 
-## **Introduction**
-This repository is a collection of work, complete as part of the H.Dip programme, Higher Diploma in Science in Data Analytics, Module: Programming and Scripting.
+## **Introduction** 
+This repository is a collection of work, complete as part of the H.Dip prograame, Higher Diploma in Science n Data Analytics, Module: Programming and Scripting.
 
-Each week, following a series of lectures, a task will be assigned to demonstrate both learning and additional research regarding the topics discussed in the lectures.
-By in general, a progam will need to be generated to complete a preassigned task.
+Each week, following a series of lectures, a task was assigned, to demonstrate both learning and additional reading/research on the topics discussed in the lectures.
+
+This repository is collection of my weekly tasks, including some additional guidance and instruction in how to run each task/program.
 --- 
 
 ## How to get started
@@ -31,7 +32,7 @@ I would recommend downloading the following applications (ensuring sufficent spa
 ---
 
 ### <span style="color:blue">**Week 01** -helloworld.py</span>
-**Asignment Instructions**
+**Asignment Instructions:**\
 1. Create a GitHub account and repository for yourself (pands-mywork), and the weekly task (pands-weekly-tasks)
 2. Commit and push a file to the weekly tasks repository called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
 
@@ -40,7 +41,7 @@ I would recommend downloading the following applications (ensuring sufficent spa
 ---
 
 ### <span style="color:blue">**Week 02** - bank.py.</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a program called bank.py.
 
 The program should:
@@ -55,7 +56,7 @@ The program should:
 
 ---
 ### <span style="color:blue">**Week 03** - accounts.py</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 Extra:
@@ -75,7 +76,7 @@ Modify the program to deal with account numbers of any length ( comment your ass
 ---
 
 ### <span style="color:blue">**Week 04** - collatz.py</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 - At each step calculate the next value by taking the current value and,
  - If it is even, divide it by two, 
@@ -106,7 +107,7 @@ Finally, the output was printed, to include each digit generated through out the
 ---
 
 ### <span style="color:blue">**Week 05** - weekday.py</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
  - I searchted the internet on how generate what the current day is. The datetime module provides classes for manipulating dates and times in Python. Reference: https://docs.python.org/3/library/datetime.html , https://www.w3schools.com/python/python_datetime.asp. 
@@ -122,7 +123,7 @@ Write a program that outputs whether or not today is a weekday. (The program sho
 ---
 
 ### <span style="color:blue">**Week 06** - sqrt.py</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called <tt>sqrt</tt> that does this.
@@ -138,13 +139,13 @@ Research:
 ---
 
 ### <span style="color:blue">**Week 07** - .py</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a program that reads in a text file and outputs the number of e's it contains. 
 The program should take the filename from an argument on the command line. 
 ---
 
 ### <span style="color:blue">**Week 08** - plottask.py</span>
-**Asignment Instructions**\
+**Asignment Instructions:**\
 Write a program called plottask.py that displays:
 - a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
 - and a plot of the function  h(x)=x3 in the range 0 to 10, 
