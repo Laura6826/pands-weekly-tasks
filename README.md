@@ -5,19 +5,32 @@
 ***
 This repository is a collection of work, complete as part of the H.Dip programme, Higher Diploma in Science in Data Analytics, Module: Programming and Scripting.
 
-Each week, a progam will need to be generated to complete a preassigned task.
+Each week, following a series of lectures, a task will be assigned to demonstrate both learning and additional research regarding the topics discussed in the lectures.\
+By in general, a progam will need to be generated to complete a preassigned task.
 
-## **Week 01** -helloworld.py
+## Table of contents
+  1. [Week 01- helloworlSetting up the Environment](#week-01--helloworldpy)
+  2. [Week 02- Statements](#week-02---bankpy)
+  3. [Week 03- Variables](#week-03---accountspy)
+  4. [Week 04- Controlling the flow](#week-04---collatzpy)
+  5. [Week 05- Date](#week-05---weekdaypy)
+  6. [Week 06- Functions](#week-06---sqrtpy)
+  7. [Week 07- Files](#week-07---py)
+  8. [Week 08- Looking ahead](#week-08---plottaskpy)
+
+### **Week 01** -helloworld.py
 ---
 
+**Asignment Instructions**
 1. Create a GitHub account and repository for yourself (pands-mywork), and the weekly task (pands-weekly-tasks)
 2. Commit and push a file to the weekly tasks repository called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
 
 **My notes:**
 - Ensure care is taken when entering the output, ie ensure you include appropriate spaces and colons.
 
-## **Week 02** - bank.py.
+### **Week 02** - bank.py.
 ---
+**Asignment Instructions**
 Write a program called bank.py.
 
 The program should:
@@ -30,8 +43,9 @@ The program should:
  - I have since found out (Reference, Pof DA, Lectire 6.2, Exponential Notiation), that 123e-2= 1.23.
  - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python). 
 
-## **Week 03** - accounts.py
+### **Week 03** - accounts.py
 ---
+**Asignment Instructions**
 Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 Extra:
@@ -49,8 +63,9 @@ Modify the program to deal with account numbers of any length ( comment your ass
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
   - If the input is incorrect, ie contains letters or symbols, print, 'Invalid account number entered. Please enter a valid account number.'
 
-## **Week 04** - collatz.py
+### **Week 04** - collatz.py
 ---
+**Asignment Instructions**
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 - At each step calculate the next value by taking the current value and,
  - If it is even, divide it by two, 
@@ -79,8 +94,9 @@ Once the definition of the collatz_sequence was complete, we could proceed to us
   - An **else** conditional statement was then used, to call forward the function created and apply it to the input data.
 Finally, the output was printed, to include each digit generated through out the process, hence generating the collatz sequence for the originally entered digit.
 
-## **Week 05** - weekday.py
+### **Week 05** - weekday.py
 ---
+**Asignment Instructions**
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
  - I searchted the internet on how generate what the current day is. The datetime module provides classes for manipulating dates and times in Python. Reference: https://docs.python.org/3/library/datetime.html , https://www.w3schools.com/python/python_datetime.asp. 
@@ -94,8 +110,9 @@ Write a program that outputs whether or not today is a weekday. (The program sho
  - All other variables within the range would be treated as the weekend using the *else* statement.
   - If the day was identified as the weekend, the print out would read as 'Today is '*(name_of_day[day_of_week])*'. Hurrah, go back to bed!'.
 
-## **Week 06** - sqrt.py
+### **Week 06** - sqrt.py
 ---
+**Asignment Instructions**
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called <tt>sqrt</tt> that does this.
@@ -109,13 +126,15 @@ Research:
    -The first *sqrt.py*, used the math module to compare the estimate value to see how close the approximations were. This was so i could get to grips with what was needed to get the basics working.
      - The second file, *sqrt_no_mathmodule.py*, did not use formulas inported from the math module. Instead, defintions were created of the formulas necessary.
 
-## **Week 07** - .py
+### **Week 07** - .py
 ---
+**Asignment Instructions**
 Write a program that reads in a text file and outputs the number of e's it contains. 
 The program should take the filename from an argument on the command line. 
 
-## **Week 08** - plottask.py
-___
+### **Week 08** - plottask.py
+---
+**Asignment Instructions**
 Write a program called plottask.py that displays:
 - a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
 - and a plot of the function  h(x)=x3 in the range 0 to 10, 
