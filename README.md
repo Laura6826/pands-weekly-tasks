@@ -9,30 +9,30 @@
 [Introduction](#introduction)
 [How to get started](#how-to-get-started)
 
-  1. [Week 01- helloworlSetting up the Environment](#week-01--helloworldpy)
+  1. [Week 01- Setting up the Environment](#week-01--helloworldpy)
   2. [Week 02- Statements](#week-02---bankpy)
   3. [Week 03- Variables](#week-03---accountspy)
   4. [Week 04- Controlling the flow](#week-04---collatzpy)
   5. [Week 05- Date](#week-05---weekdaypy)
   6. [Week 06- Functions](#week-06---sqrtpy)
-  7. [Week 07- Files](#week-07---py)
+  7. [Week 07- Files](#week-07---count_epy)
   8. [Week 08- Looking ahead](#week-08---plottaskpy)
 
 ***
 
 ## **Introduction**
 
-This repository is a collection of work, complete as part of the H.Dip prograame, Higher Diploma in Science n Data Analytics, Module: Programming and Scripting.
+This repository is a collection of work, complete as part of the H.Dip Programme, Higher Diploma in Science n Data Analytics, Module: Programming and Scripting.
 
 Each week, following a series of lectures, a task was assigned, to demonstrate both learning and additional reading/research on the topics discussed in the lectures.
 
-This repository is collection of my weekly tasks, including some additional guidance and instruction in how to run each task/program
+This repository is collection of my weekly tasks, including some additional guidance and instruction in how to run each task/program.
 
 ***
 
-## How to get started
+## **How to get started**
 
-In order to run the included files, you will need to ensure that you have access to the correct softwear.
+In order to run the files, you will need to ensure that you have access to the correct softwear.
 I would recommend downloading the following applications (ensuring sufficent space on your hard drive prior to installation):
 
 1. Anaconda (if Anaconda is too large, miniconda would also suffice).
@@ -42,14 +42,18 @@ I would recommend downloading the following applications (ensuring sufficent spa
 
 ### <span style="color:blue">**Week 01** -helloworld.py</span>
 
+### <mark style="background-color: #FFFF00">**Week 01** -helloworld.py</mark>
+
 **Asignment Instructions:**\
 
-1. Create a GitHub account and repository for yourself (pands-mywork), and the weekly task (pands-weekly-tasks)
+1. Create a GitHub account and repository for:\
+  1st. Your own work, called 'pands-mywork'. This was not be assessed as part of the module.\
+  2nd. Weekly tasks [pands-weekly-tasks](https://github.com/Laura6826/pands-weekly-tasks). The second repository was assessed and represent 50% of the overall grade for the module.
 2. Commit and push a file to the weekly tasks repository called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
 
 **My notes:**
 
-- Ensure care is taken when entering the output, ie ensure you include appropriate spaces and colons.
+- Ensure care is taken when entering the output, *i.e.* you include appropriate spaces and colons.
 
 ***
 
