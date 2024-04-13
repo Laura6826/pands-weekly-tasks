@@ -158,7 +158,7 @@ else:
     print(hidden_account_number)
 ```
 
-1. The second code block deals with a bank account number of unspecified length.
+2. The second code block deals with a bank account number of unspecified length.
 
 ```ruby
 account_number = input('Please enter your account number: ').strip()
@@ -331,7 +331,7 @@ square_root (original_number)= (((original_number/estimated_sqrt)+ estimated_sqr
 - Both number prompted by the user were feed into the definition *'newtons_method_sqrt'*.
 - With the program returning. *'The approximate square root of {original_num} is {answer}'*
 
-1. For *sqrt_no_mathmodule.py*.
+2. For *sqrt_no_mathmodule.py*.
 
 - Similar to the above method:
   - The application of the Newton Method for square roots formula was extropolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
@@ -395,7 +395,7 @@ answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
 ```
 
-1. The second file does not use the math module.
+2. The second file does not use the math module.
 
 ```ruby
 def is_close(num1, num2, tolerance=0.001):  
