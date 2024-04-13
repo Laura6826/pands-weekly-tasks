@@ -10,8 +10,10 @@ def count_e(filename): # It is necessary to create a module to count the number 
             # Reference https://www.w3schools.com/python/ref_list_count.asp.
             return e_count  
     except FileNotFoundError:
-        return ('File not found.')
-
+        pass
+        print ('File not found')
+        return (input ('Please enter the location of the text file to be analyised: ').strip())
+    
 
 file_location = input ('Please enter the location of the text file to be analyised: ').strip()
 # Here we request the user to enter the file that they wish to analyis.
