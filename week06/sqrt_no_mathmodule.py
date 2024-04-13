@@ -36,4 +36,3 @@ estimate_sqrt = int(input(
 
 answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
-
