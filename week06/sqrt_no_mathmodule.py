@@ -16,16 +16,24 @@ def newtons_method_sqrt(num, estimate):             # We need to apply the 'Newt
     elif is_close(estimate, new_estimate) is True:
         return new_estimate
 
-original_num = (input('Please enter the number you wish to retrieve the square root of: '))
+original_num = int(input('Please enter the number you wish to retrieve the square root of: '))
 
-while type (original_num) is str:
-# isinstance(original_num, str):                
-    # I tried to also ensure that the integer is positive, by using the code 'while original_num <0', however it through out an error.
-    print ('That is not a positive integer. Please enter a positive integer: ')
-    original_num = (input('Please enter the number you wish to retrieve the square root of: '))
-if type (original_num) is float:
-    estimate_sqrt = (int(input('Please enter an educated guess as to the squart root of your original number: ')))
-    
+
+isInt = True
+try:
+    int(original_num)        # first we try converting the varible into an integer
+except ValueError:
+    isInt = False
+while isInt:
+    print ('That is a positive integer, please proceed to step 2.')
+    break                    # A break is added, to prevent the code from running indefinitely.
+else:
+    print("That is not a positive integer.")
+    original_num= int(input('Please enter the number you wish to retrieve the square root of: '))
+
+estimate_sqrt = int(input(
+   'Step 2: Please enter an educated guess as to the squart root of your original number: '))
+
 answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
 
