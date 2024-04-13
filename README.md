@@ -62,6 +62,10 @@ Wikipedia defines Anaconda as;
 - Ensure care is taken when entering the output, *i.e.* you include appropriate spaces and colons.
 - The language identifier, *ruby* was used to enable [syntax highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) in the code blocks below.
 
+**When run:**
+
+- The program will print: Hello World!
+
 **Associated Code:**
 
 ```ruby
@@ -87,6 +91,17 @@ The program should:
 - As the input is entered as a whole number, I divided by 100, to get the decimal point in the appropriate position. This is not the most appropriate method, i hope to come across a more suitable method as the course progresses.
 - I have since found out (Reference, Pof DA, Lecture 6.2, Exponential Notiation), that 123e-2= 1.23.
 - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (<https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python>).
+
+**When run:**
+
+- The user will be prompted: .
+
+  - Enter ammount 1 (in cents):  .
+  - Enter ammount 2 (in cents):  .
+
+- The program will print:
+
+  - The sum of these is: €  .
 
 **Associated Code:**
 
@@ -119,6 +134,15 @@ Modify the program to deal with account numbers of any length (comment your assu
 - An **if** and **else** conditional statement was used to determine which reponse to print in the output.
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
   - If the input is incorrect, ie contains letters or symbols, print, *'Invalid account number entered. Please enter a valid account number.'*
+
+**When run:**
+
+- The user will be prompted: .
+  - Please enter a 10 digit account number: 123455678
+
+- The program will print:
+  - xxxxxx678
+
 
 **Associated Code:**
 
@@ -188,6 +212,14 @@ Once the definition of the collatz_sequence was complete, we could proceed to us
   - An **else** conditional statement was then used, to call forward the function created and apply it to the input data.
 Finally, the output was printed, to include each digit generated through out the process, hence generating the collatz sequence for the originally entered digit.
 
+**When run:**
+
+- The user will be prompted: .
+  - Please enter a positive integer: 6
+
+- The program will print:
+  - xThe Collatz sequence is [6, 3, 10, 5, 16, 8, 4, 2, 1]
+  
 **Associated Code:**
 
 ```ruby
@@ -230,6 +262,12 @@ Write a program that outputs whether or not today is a weekday. (The program sho
 - All other variables within the range would be treated as the weekend using the *else* statement.
 - If the day was identified as the weekend, the print out would read as;
   - *'Today is '*(name_of_day[day_of_week])*'. Hurrah, go back to bed!'*
+
+**When run:**
+
+- The program will print:
+  - Today is Saturday.
+    Its the weekend! Hurrah, go back to bed!
 
 **Associated Code:**
 
@@ -279,19 +317,50 @@ square_root (original_number)= (((original_number/estimated_sqrt)+ estimated_sqr
 - The Math Module was downloaded to use as an initial reference.
 - The application of the Newton Method for square roots formula was extropolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
 - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
-- The definiation for *'newtons_method_sqrt'* was created, whereby the original number and an an educated guess as to the squart root of the original number.
+- The definiation for *'newtons_method_sqrt'* was created, whereby the original number and an educated guess as to the squart root of the original number.
   - An **if** and **else** conditional statement was used to determine which reponse to print in the output.
   - If the input is correct, ie the calculated '*new_estimate'* was equal to the square root of the original estimate ( as calculated by the math module), then the number would be returned as the *'approx_sqrt'*.
   - If the input is incorrect, ie the calculated '*new_estimate'* was not equal to the square root of the original estimate (as calculated by the math module), then the number would loop back into the def until it is equal to square root of the original estimate and returned as the *'approx_sqrt'*.
 
 - Once *'newtons_method_sqrt'* was defined, the user was promted to,*'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
+
 - The **'try, except'** statement was used to deal with potential exceptions, in this case, we need the entered integer to be positive. How to check if input is an integer was researched. Reference: <https://www.pythonpool.com/python-check-if-string-is-integer>.
- - First we try converting the varible into an integer
- - A break is added, to prevent the code from running indefinitely.
- - If the integer added was not a positive integer, the user was prompted with, *'Please enter the number you wish to retrieve the square root of: '*
-- The user was then prompted again, *'Step 2: Please enter an educated guess as to the squart root of your original number: '*
+  - First we try converting the varible into an integer
+  - A break is added, to prevent the code from running indefinitely.
+  - If the integer added was not a positive integer, the user was prompted with, *'Step 1: Please enter the number you wish to retrieve the square root of: '*
+  - The user was then prompted again, *'Step 2: Please enter an educated guess as to the square root of your original number: '*
 - Both number prompted by the user were feed into the definition *'newtons_method_sqrt'*.
 - With the program returning. *'The approximate square root of {original_num} is {answer}'*
+
+1. For *sqrt_no_mathmodule.py*.
+
+- Similar to the above method:
+  - The application of the Newton Method for square roots formula was extropolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
+  - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
+  - The definition for *'newtons_method_sqrt'* was created, whereby the original number and an educated guess as to the squart root of the original number.
+- However on this occassion, the *math* module was not used. Instead a def was created where by the **is_close()** command is used, with a tolerance of 0.001. When the second number is within 0.001 of the first number, the function will return the absolute of the original number. This was pluged into the definition for *'newtons_method_sqrt'*
+
+- Once *'newtons_method_sqrt'* was defined, the user was promted to,*'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
+
+- The **'try, except'** statement was used to deal with potential exceptions, in this case, we need the entered integer to be positive. How to check if input is an integer was researched. Reference: <https://www.pythonpool.com/python-check-if-string-is-integer>.
+  - If the *'new_estimate'* is notnwithin 0.001 of the original number, ie is 'False', the *'new_estimate'* is looped back into the calculation until it is within 0.001 of the original number.
+  - First we try converting the varible into an integer
+  - A break is added, to prevent the code from running indefinitely.
+  - If the integer added was not a positive integer, the user was prompted with, *'Step 1: Please enter the number you wish to retrieve the square root of: '*
+  - The user was then prompted again, *'Step 2: Please enter an educated guess as to the square root of your original number: '*
+- Both number prompted by the user were feed into the definition *'newtons_method_sqrt'*.
+- With the program returning. *'The approximate square root of {original_num} is {answer}'*
+
+**When run:**
+
+- The user will be prompted: .
+  - Step 1: Please enter the number you wish to retrieve the square root of: 25
+- The programme will return:
+  - That is a positive integer, please proceed to step 2.
+- The user will be prompted: .
+  - Step 2: Please enter an educated guess as to the squart root of your original number:6
+- The programme will return:
+  -The approximate square root of 36 is 6
 
 **Associated Code:**
 
@@ -308,7 +377,7 @@ def newtons_method_sqrt(num, estimate):
         approx_sqrt = (new_estimate)
         return approx_sqrt       
 
-original_num= (input('Step 1: Please enter the number you wish to retrieve the square root of: '))
+original_num= int(input('Step 1: Please enter the number you wish to retrieve the square root of: '))
 
 isInt = True 
 try:
@@ -320,10 +389,9 @@ while isInt:
    break                    
 else:
    print("That is not a positive integer.")
-   original_num= (input('Please enter the number you wish to retrieve the square root of: '))
+   original_num= int(input('Please enter the number you wish to retrieve the square root of: '))
 
 estimate_sqrt = (int(input('Step 2: Please enter an educated guess as to the squart root of your original number: ')))
-
 answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
 ```
@@ -334,8 +402,8 @@ print(f'The approximate square root of {original_num} is {answer}')
 def is_close(num1, num2, tolerance=0.001):  
    return abs(num1 - num2) < tolerance 
 
-def newtons_method_sqrt(num, estimate):             # We need to apply the 'Newtons method formula', to create a new_estimate.
-    new_estimate = ((estimate +(num/ estimate))/ 2) # We can now use a 'Built in Function', the 'if' statement to compare our estimates.
+def newtons_method_sqrt(num, estimate):             
+    new_estimate = ((estimate +(num/ estimate))/ 2) 
     if is_close(estimate, new_estimate) is False:
         return newtons_method_sqrt(num, new_estimate)
     elif is_close(estimate, new_estimate) is True:
@@ -343,18 +411,22 @@ def newtons_method_sqrt(num, estimate):             # We need to apply the 'Newt
 
 original_num = (input('Please enter the number you wish to retrieve the square root of: '))
 
-while type (original_num) is str:
-# isinstance(original_num, str):                
-    # I tried to also ensure that the integer is positive, by using the code 'while original_num <0', however it through out an error.
-    print ('That is not a positive integer. Please enter a positive integer: ')
-    original_num = (input('Please enter the number you wish to retrieve the square root of: '))
-if type (original_num) is float:
-    estimate_sqrt = (int(input('Please enter an educated guess as to the squart root of your original number: ')))
-    
+isInt = True 
+try:
+   int(original_num)       
+except ValueError:
+   isInt = False
+while isInt:
+   print ('That is a positive integer, please proceed to step 2.')
+   break                    
+else:
+   print("That is not a positive integer.")
+   original_num= int(input('Please enter the number you wish to retrieve the square root of: '))
+
+estimate_sqrt = (int(input('Step 2: Please enter an educated guess as to the squart root of your original number: ')))
 answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
 ```
-
 
 ***
 
@@ -375,6 +447,13 @@ The program should take the filename from an argument on the command line
 - The exception *'FileNotFoundError'* was applied, should the user input an incorrect location for the text to be analyised.
 - The user was them prompted to enter the location of the file to be analyised: ''Please enter the location of the text file to be analyised: ', with any additional white space removed with the command, *'strip()'*.
 - The file submitted was run through the code, with the user recieving the following output: *'This file contains {e_occurrences} iterations of the letter 'e'.'*
+
+**When run:**
+
+- The user will be prompted: .
+  -Please enter the location of the text file to be analyised: .
+ Once the user has entered a valid location for the file to be analyised, the program will print:
+  - This file contains 1260 iterations of the letter 'e'.
 
 **Associated Code:**
 
