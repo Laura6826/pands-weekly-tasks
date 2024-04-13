@@ -142,8 +142,7 @@ Modify the program to deal with account numbers of any length (comment your assu
 
 - The program will print:
   - xxxxxx678
-
-
+  
 **Associated Code:**
 
 1. The first code  deals with a bank account number of a specified length (i.e. 10 digits long)
