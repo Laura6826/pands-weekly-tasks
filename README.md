@@ -1,4 +1,4 @@
-# <span style="color:blue"> Repository for Module: Programming and Scripting</span></code>
+# <span style="color:blue"> Repository for Weekly Tasks for the module: Programming and Scripting, 2024</span></code>
 
 ## *Author: Laura Lyons*
 
@@ -60,8 +60,11 @@ Wikipedia defines Anaconda as;
     2. **pands_my_work**. This folder was where all my personal work associated with each weeks leactures was stored.
 
 - Ensure care is taken when entering the output, *i.e.* you include appropriate spaces and colons.
+- The language identifier, *ruby* was used to enable [syntax highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) in the code blocks below.
 
-```
+#### Code Block
+
+```ruby
 print("Hello World!")
 ```
 
@@ -85,7 +88,9 @@ The program should:
 - I have since found out (Reference, Pof DA, Lecture 6.2, Exponential Notiation), that 123e-2= 1.23.
 - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (<https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python>).
 
-```
+#### Code Block
+
+```ruby
 ammount1 = int(input('Enter ammount 1 (in cents): '))     
 ammount2 = int(input('Enter ammount 2 (in cents): '))
 answer= ((ammount1+ammount2)* (10**-2)) 
@@ -115,10 +120,11 @@ Modify the program to deal with account numbers of any length (comment your assu
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
   - If the input is incorrect, ie contains letters or symbols, print, *'Invalid account number entered. Please enter a valid account number.'*
 
+#### Code Block
 
 1. The first code  deals with a bank account number of a specified length (i.e. 10 digits long)
 
-```
+```ruby
 account_number = input('Please enter a 10 digit account number: ').strip()
 hidden_account_number = 'x' * 6 + account_number [6:]
 
@@ -131,7 +137,7 @@ else:
 
 2. The second code block deals with a bank account number of unspecified length.
 
-```
+```ruby
 account_number = input('Please enter your account number: ').strip()
 hidden_account_part= 'x' * (len(account_number) - 4)
 visible_account_part = account_number[-4:]
@@ -165,11 +171,6 @@ Push the program in your pands-weekly-tasks GitHub repository
 - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
 - As the program must end when the current value equals 1, we use the **while* loop, so that the function will continue to run until the end result is 1.
 - To check if the number is odd or even, as these numbers will be 'treated differently', we use an **if** statement.
-
-````
-if (x % 2) == 0
-````
-
 - '**if** (x % 2) == 0', if, when x is divided by 2, it equals 0, we know this is an even number.
 - As instructed, Proceed to divide the number by 2.
 - And append the list named 'sequence', to refect the calculation applied. Reference: Lecture 5: List and Tuples and [O'Reilly (2015) A Whirlwind Tour of Python (pg:16)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
@@ -186,6 +187,28 @@ Once the definition of the collatz_sequence was complete, we could proceed to us
   - If the input did not meet the requirements, ie, a positive integer, the program would request another guess using the following prompt, 'That is not a positive integer. Please enter a positive integer:'
   - An **else** conditional statement was then used, to call forward the function created and apply it to the input data.
 Finally, the output was printed, to include each digit generated through out the process, hence generating the collatz sequence for the originally entered digit.
+
+#### Code Block
+
+```ruby
+def collatz_sequence (num):      
+    sequence = [num]              
+    while num!= 1:                
+        if (num % 2) ==0:         
+            num= num /2 
+            sequence.append(num)
+        else:
+            num = (num*3) +1 
+            sequence.append(num)  
+    return sequence
+       
+guess= int(input('Please enter a positive integer: ')) 
+while guess <= 0:
+    guess = int(input('That is not a positive integer. Please enter a positive integer:'))
+else:
+    collatz_sequence_guess = collatz_sequence(guess)
+    print ('The Collatz sequence is {}'. format (collatz_sequence_guess))
+```
 
 ***
 
@@ -208,6 +231,26 @@ Write a program that outputs whether or not today is a weekday. (The program sho
 - If the day was identified as the weekend, the print out would read as;
   - *'Today is '*(name_of_day[day_of_week])*'. Hurrah, go back to bed!'*
 
+#### Code Block
+
+```ruby
+from datetime import date 
+current_day = date.today()         
+day_of_week = current_day.weekday() 
+name_of_day= ('Monday',             
+              'Tuesday', 
+              'Wednesday', 
+              'Thursday', 
+              'Friday', 
+              'Saturday', 
+              'Sunday')         
+
+if day_of_week <5:  
+    print(f"Today is {(name_of_day[day_of_week])}.\nUnfortunately this is a weekday, go back to work!.")
+else:
+    print(f"Today is {(name_of_day[day_of_week])}.\nIts the weekend! Hurrah, go back to bed!")
+```
+
 ***
 
 ### <span style="color:blue">**Week 06** - sqrt.py</span>
@@ -227,6 +270,11 @@ Research:
    -The first *sqrt.py*, used the math module to compare the estimate value to see how close the approximations were. This was so i could get to grips with what was needed to get the basics working.
   - The second file, *sqrt_no_mathmodule.py*, did not use formulas inported from the math module. Instead, defintions were created of the formulas necessary.
 
+#### Code Block
+
+```ruby
+
+```
 ***
 
 ### <span style="color:blue">**Week 07** - count_e.py</span>
@@ -238,20 +286,27 @@ The program should take the filename from an argument on the command line
 **My notes:**
 
 - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/). It is necessary to create a module to count the number of 'e's in predefinied file.
-- The 'try' command was used to introduce 
-    try:                                        # We use the 'try' command
-        with open (filename, 'r') as f:         # The file is opened in the 'read' mode.
-            content = f.read()                  # The f.read() command is used to access the file content.
+- The *'try, except'* statement was used to deal with potential exceptions.
+- The file was opened with *'r'* , as this is read mode.We do not anticipate having to add anything text to the file, we just want to read in the text contained within the tile.
+- The *'f.read()'* command was used, to access the file content.
+
+#### Code Block
+
+```ruby
+    try:                                        
+        with open (filename, 'r') as f:         
+            content = f.read()                 
             e_count = content.lower().count('e')        # The count() command was used to count the number of 'e's present in the text.
-            # Reference https://www.w3schools.com/python/ref_list_count.asp.
+            # Reference <https://www.w3schools.com/python/ref_list_count.asp>.
             return e_count  
     except FileNotFoundError:
         return ('File not found.')
 
-
 file_location = input ('Please enter the location of the text file to be analyised: ').strip()
-# Here we request the user to enter the file that they wish to analyis.
-# The strip command is used to remove any unecessary white space present in the input.
+
+# Here we request the user to enter the file that they wish to analyis
+
+# The strip command is used to remove any unecessary white space present in the input
 
 e_occurrences = count_e(file_location)
 print(f"This file contains {e_occurrences} iterations of the letter 'e'.")
