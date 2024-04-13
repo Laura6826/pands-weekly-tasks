@@ -42,7 +42,7 @@ Wikipedia defines Anaconda as;
 
 ***
 
-### <span style="color:blue">**Week 01** -helloworld.py</span>
+## <span style="color:blue">**Week 01** -helloworld.py</span>
 
 **Asignment Instructions:**
 
@@ -70,7 +70,7 @@ print("Hello World!")
 
 ***
 
-### <span style="color:blue">**Week 02** - bank.py.</span>
+## <span style="color:blue">**Week 02** - bank.py.</span>
 
 **Asignment Instructions:**
 
@@ -99,7 +99,7 @@ print (f'The sum of these is: \N{euro sign}{answer}')
 
 ***
 
-### <span style="color:blue">**Week 03** - accounts.py</span>
+## <span style="color:blue">**Week 03** - accounts.py</span>
 
 **Asignment Instructions:**\
 Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
@@ -154,7 +154,7 @@ else:
 
 ***
 
-### <span style="color:blue">**Week 04** - collatz.py</span>
+## <span style="color:blue">**Week 04** - collatz.py</span>
 
 **Asignment Instructions:**\
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
@@ -212,7 +212,7 @@ else:
 
 ***
 
-### <span style="color:blue">**Week 05** - weekday.py</span>
+## <span style="color:blue">**Week 05** - weekday.py</span>
 
 **Asignment Instructions:**\
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
@@ -253,7 +253,7 @@ else:
 
 ***
 
-### <span style="color:blue">**Week 06** - sqrt.py</span>
+## <span style="color:blue">**Week 06** - sqrt.py</span>
 
 **Asignment Instructions:**\
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
@@ -275,9 +275,10 @@ Research:
 ```ruby
 
 ```
+
 ***
 
-### <span style="color:blue">**Week 07** - count_e.py</span>
+## <span style="color:blue">**Week 07** - count_e.py</span>
 
 **Asignment Instructions:**\
 Write a program that reads in a text file and outputs the number of e's it contains.
@@ -310,10 +311,11 @@ file_location = input ('Please enter the location of the text file to be analyis
 
 e_occurrences = count_e(file_location)
 print(f"This file contains {e_occurrences} iterations of the letter 'e'.")
+```
 
 ***
 
-### <span style="color:blue">**Week 08** - plottask.py</span>
+## <span style="color:blue">**Week 08** - plottask.py</span>
 
 **Asignment Instructions:**\
 Write a program called plottask.py that displays:
