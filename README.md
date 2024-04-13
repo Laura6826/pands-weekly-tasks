@@ -6,7 +6,7 @@
 
 ## **Table of contents**
 
-[Introduction](#introduction)
+[Introduction](#introduction)\
 [How to get started](#how-to-get-started)
 
   1. [Week 01- Setting up the Environment](#week-01--helloworldpy)
@@ -22,7 +22,7 @@
 
 ## **Introduction**
 
-This repository is a collection of work, complete as part of the H.Dip Programme, Higher Diploma in Science n Data Analytics, Module: Programming and Scripting.
+This repository is a collection of work, complete as part of the Higher Diploma in Science in Data Analytics, Module: Programming and Scripting.
 
 Each week, following a series of lectures, a task was assigned, to demonstrate both learning and additional reading/research on the topics discussed in the lectures.
 
@@ -35,16 +35,16 @@ This repository is collection of my weekly tasks, including some additional guid
 In order to run the files, you will need to ensure that you have access to the correct softwear.
 I would recommend downloading the following applications (ensuring sufficent space on your hard drive prior to installation):
 
-1. Anaconda (if Anaconda is too large, miniconda would also suffice).
-2. Visual Studio Code (this is a code editor).
+1. Anaconda (if Anaconda is too large, miniconda would also suffice).\
+Wikipedia defines Anaconda as;
+"*a distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment*".
+2. Visual Studio Code (this is a code editor made by Microsoft).
 
 ***
 
 ### <span style="color:blue">**Week 01** -helloworld.py</span>
 
-### <mark style="background-color: #FFFF00">**Week 01** -helloworld.py</mark>
-
-**Asignment Instructions:**\
+**Asignment Instructions:**
 
 1. Create a GitHub account and repository for:\
   1st. Your own work, called 'pands-mywork'. This was not be assessed as part of the module.\
@@ -53,13 +53,20 @@ I would recommend downloading the following applications (ensuring sufficent spa
 
 **My notes:**
 
+- When installing Anaconda, make sure you check the PATH variable ; "*Add Anaconda3 to my PATH environment variable*'
+- When creating a Github account, ensure a personal email address that you will have continual access too is used. A college email address will be deactivated after graduation, if used when setting up a Git hub account, there maybe difficulties in accessing the Github account further down the line.
+- Once the account was set up on Github, 2 folders were created.
+    1. **pands_weekly_tasks**. Each week, a new folder was created as a subfolder within *pands_weekly_tasks*, to represent each weekly task and named accordingly. The URL for this folder was submitted on **Moodle** to allow for the correction of the tasks (totaling 50% of this modules mark).
+    2. **pands_my_work**. This folder was where all my personal work associated with each weeks leactures was stored.
+
 - Ensure care is taken when entering the output, *i.e.* you include appropriate spaces and colons.
 
 ***
 
 ### <span style="color:blue">**Week 02** - bank.py.</span>
 
-**Asignment Instructions:**\
+**Asignment Instructions:**
+
 Write a program called bank.py.
 
 The program should:
@@ -71,7 +78,7 @@ The program should:
 **My notes:**
 
 - As the input is entered as a whole number, I divided by 100, to get the decimal point in the appropriate position. This is not the most appropriate method, i hope to come across a more suitable method as the course progresses.
-- I have since found out (Reference, Pof DA, Lectire 6.2, Exponential Notiation), that 123e-2= 1.23.
+- I have since found out (Reference, Pof DA, Lecture 6.2, Exponential Notiation), that 123e-2= 1.23.
 - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (<https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python>).
 
 ***
