@@ -1,4 +1,4 @@
-# Repository for Weekly Tasks for the module: Programming and Scripting, 2024
+# Repository of weekly tasks for the module: Programming and Scripting, 2024
 
 ## *Author: Laura Lyons*
 
@@ -62,7 +62,7 @@ Wikipedia defines Anaconda as;
 - Ensure care is taken when entering the output, *i.e.* you include appropriate spaces and colons.
 - The language identifier, *ruby* was used to enable [syntax highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) in the code blocks below.
 
-#### Code Block
+**Associated Code:**
 
 ```ruby
 print("Hello World!")
@@ -70,7 +70,7 @@ print("Hello World!")
 
 ***
 
-## **Week 02** - bank.py.
+## **Week 02** - bank.py
 
 **Asignment Instructions:**
 
@@ -88,7 +88,7 @@ The program should:
 - I have since found out (Reference, Pof DA, Lecture 6.2, Exponential Notiation), that 123e-2= 1.23.
 - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (<https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python>).
 
-#### Code Block
+**Associated Code:**
 
 ```ruby
 ammount1 = int(input('Enter ammount 1 (in cents): '))     
@@ -120,7 +120,7 @@ Modify the program to deal with account numbers of any length (comment your assu
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
   - If the input is incorrect, ie contains letters or symbols, print, *'Invalid account number entered. Please enter a valid account number.'*
 
-#### Code Block
+**Associated Code:**
 
 1. The first code  deals with a bank account number of a specified length (i.e. 10 digits long)
 
@@ -135,7 +135,7 @@ else:
     print(hidden_account_number)
 ```
 
-2. The second code block deals with a bank account number of unspecified length.
+1. The second code block deals with a bank account number of unspecified length.
 
 ```ruby
 account_number = input('Please enter your account number: ').strip()
@@ -188,7 +188,7 @@ Once the definition of the collatz_sequence was complete, we could proceed to us
   - An **else** conditional statement was then used, to call forward the function created and apply it to the input data.
 Finally, the output was printed, to include each digit generated through out the process, hence generating the collatz sequence for the originally entered digit.
 
-#### Code Block
+**Associated Code:**
 
 ```ruby
 def collatz_sequence (num):      
@@ -224,14 +224,14 @@ Write a program that outputs whether or not today is a weekday. (The program sho
 - The variable *day_of_week* was created to tell if the specific day of the week.  (0 = Monday, 6 = Sunday)
 - the tuple *name_of_day* was created to define the order of the weekdays, (0 = Monday, 6 = Sunday).
 - The variable *today* was created, to simplify the code.
-- An *for* statement was then applied and a range defined to distinguish weekdays [0:5].
+- An **for** statement was then applied and a range defined to distinguish weekdays [0:5].
 - If the day was identified as a weekend, the print out would read:
   - *'Today is '*(name_of_day[day_of_week])*. Unfortunately this is a weekday, go back to work'*
 - All other variables within the range would be treated as the weekend using the *else* statement.
 - If the day was identified as the weekend, the print out would read as;
   - *'Today is '*(name_of_day[day_of_week])*'. Hurrah, go back to bed!'*
 
-#### Code Block
+**Associated Code:**
 
 ```ruby
 from datetime import date 
@@ -264,17 +264,97 @@ You should create a function called ***sqrt*** that does this.
 Research:
 
 - Newtons method for square roots, is a technique for finding the square root of a number by iteratively improving an initial guess References: python - Finding the square root using Newton's method (errors!) - Stack Overflow ()
-- The formula for Newtons method = square_root (original_number)= (((original_number/estimated_sqrt)+ estimated_sqrt)/2).
-
-- 2 seperate files were created.
-   -The first *sqrt.py*, used the math module to compare the estimate value to see how close the approximations were. This was so i could get to grips with what was needed to get the basics working.
-  - The second file, *sqrt_no_mathmodule.py*, did not use formulas inported from the math module. Instead, defintions were created of the formulas necessary.
-
-#### Code Block
+The formula for Newtons method:
 
 ```ruby
-
+square_root (original_number)= (((original_number/estimated_sqrt)+ estimated_sqrt)/2).
 ```
+
+- 2 seperate files were created.
+   1. The first *sqrt.py*, used the math module to compare the estimate value to see how close the approximations were. This was so i could get to grips with what was needed to get the basics working.
+   1. The second file, *sqrt_no_mathmodule.py*, did not use formulas inported from the math module. Instead, defintions were created of the formulas necessary.
+
+1. For *'sqrt.py'*:
+
+- The Math Module was downloaded to use as an initial reference.
+- The application of the Newton Method for square roots formula was extropolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
+- The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
+- The definiation for *'newtons_method_sqrt'* was created, whereby the original number and an an educated guess as to the squart root of the original number.
+  - An **if** and **else** conditional statement was used to determine which reponse to print in the output.
+  - If the input is correct, ie the calculated '*new_estimate'* was equal to the square root of the original estimate ( as calculated by the math module), then the number would be returned as the *'approx_sqrt'*.
+  - If the input is incorrect, ie the calculated '*new_estimate'* was not equal to the square root of the original estimate (as calculated by the math module), then the number would loop back into the def until it is equal to square root of the original estimate and returned as the *'approx_sqrt'*.
+
+- Once *'newtons_method_sqrt'* was defined, the user was promted to,*'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
+- The **'try, except'** statement was used to deal with potential exceptions, in this case, we need the entered integer to be positive. How to check if input is an integer was researched. Reference: <https://www.pythonpool.com/python-check-if-string-is-integer>.
+ - First we try converting the varible into an integer
+ - A break is added, to prevent the code from running indefinitely.
+ - If the integer added was not a positive integer, the user was prompted with, *'Please enter the number you wish to retrieve the square root of: '*
+- The user was then prompted again, *'Step 2: Please enter an educated guess as to the squart root of your original number: '*
+- Both number prompted by the user were feed into the definition *'newtons_method_sqrt'*.
+- With the program returning. *'The approximate square root of {original_num} is {answer}'*
+
+**Associated Code:**
+
+1. The first file uses the math module:
+
+```ruby
+import math
+
+def newtons_method_sqrt(num, estimate):             
+    new_estimate= ((num/ estimate)+ estimate)/ 2    
+    if new_estimate != math.sqrt(num):
+        return newtons_method_sqrt(num, new_estimate)
+    elif new_estimate == math.sqrt(num):
+        approx_sqrt = (new_estimate)
+        return approx_sqrt       
+
+original_num= (input('Step 1: Please enter the number you wish to retrieve the square root of: '))
+
+isInt = True 
+try:
+   int(original_num)       
+except ValueError:
+   isInt = False
+while isInt:
+   print ('That is a positive integer, please proceed to step 2.')
+   break                    
+else:
+   print("That is not a positive integer.")
+   original_num= (input('Please enter the number you wish to retrieve the square root of: '))
+
+estimate_sqrt = (int(input('Step 2: Please enter an educated guess as to the squart root of your original number: ')))
+
+answer = newtons_method_sqrt (original_num, estimate_sqrt)
+print(f'The approximate square root of {original_num} is {answer}')
+```
+
+1. The second file does not use the math module.
+
+```ruby
+def is_close(num1, num2, tolerance=0.001):  
+   return abs(num1 - num2) < tolerance 
+
+def newtons_method_sqrt(num, estimate):             # We need to apply the 'Newtons method formula', to create a new_estimate.
+    new_estimate = ((estimate +(num/ estimate))/ 2) # We can now use a 'Built in Function', the 'if' statement to compare our estimates.
+    if is_close(estimate, new_estimate) is False:
+        return newtons_method_sqrt(num, new_estimate)
+    elif is_close(estimate, new_estimate) is True:
+        return new_estimate
+
+original_num = (input('Please enter the number you wish to retrieve the square root of: '))
+
+while type (original_num) is str:
+# isinstance(original_num, str):                
+    # I tried to also ensure that the integer is positive, by using the code 'while original_num <0', however it through out an error.
+    print ('That is not a positive integer. Please enter a positive integer: ')
+    original_num = (input('Please enter the number you wish to retrieve the square root of: '))
+if type (original_num) is float:
+    estimate_sqrt = (int(input('Please enter an educated guess as to the squart root of your original number: ')))
+    
+answer = newtons_method_sqrt (original_num, estimate_sqrt)
+print(f'The approximate square root of {original_num} is {answer}')
+```
+
 
 ***
 
@@ -287,28 +367,27 @@ The program should take the filename from an argument on the command line
 **My notes:**
 
 - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/). It is necessary to create a module to count the number of 'e's in predefinied file.
-- The *'try, except'* statement was used to deal with potential exceptions.
+- The **'try, except'** statement was used to deal with potential exceptions.
 - The file was opened with *'r'* , as this is read mode.We do not anticipate having to add anything text to the file, we just want to read in the text contained within the tile.
-- The *'f.read()'* command was used, to access the file content.
+- The **'f.read()'** command was used, to access the file content.
+- Research was needed to figure out how to count the number of 'e's present in the text. The source use for *'count()'* was <https://www.w3schools.com/python/ref_list_count.asp>.
+- **'.lower()'** was used to transform the text to be analyised into all lower case Reference: <https://www.w3schools.com/python/ref_list_count.asp>.
+- The exception *'FileNotFoundError'* was applied, should the user input an incorrect location for the text to be analyised.
+- The user was them prompted to enter the location of the file to be analyised: ''Please enter the location of the text file to be analyised: ', with any additional white space removed with the command, *'strip()'*.
+- The file submitted was run through the code, with the user recieving the following output: *'This file contains {e_occurrences} iterations of the letter 'e'.'*
 
-#### Code Block
+**Associated Code:**
 
 ```ruby
     try:                                        
         with open (filename, 'r') as f:         
             content = f.read()                 
-            e_count = content.lower().count('e')        # The count() command was used to count the number of 'e's present in the text.
-            # Reference <https://www.w3schools.com/python/ref_list_count.asp>.
+            e_count = content.lower().count('e')        
             return e_count  
     except FileNotFoundError:
         return ('File not found.')
 
 file_location = input ('Please enter the location of the text file to be analyised: ').strip()
-
-# Here we request the user to enter the file that they wish to analyis
-
-# The strip command is used to remove any unecessary white space present in the input
-
 e_occurrences = count_e(file_location)
 print(f"This file contains {e_occurrences} iterations of the letter 'e'.")
 ```
@@ -357,3 +436,49 @@ A title, x  and y axis labels and a ledged added to the plot.
 The plot was then saved using the *plt.savefig()* function.
 
 On this plot, the y-axis was *log* transformed, to make the plot easier to read and more visually appealing (Plot_task_1axis.log).
+
+**Associated Code:**
+
+1. The first  only utilizes the primary axes.
+
+```ruby
+import matplotlib.pyplot as plt                       
+import numpy as np                                    
+
+normal_data= np.random.normal(loc=5, scale= 2, size= 1000) 
+plt.hist (normal_data, label='Histogram of a normal distribution.\n(Mean= 5, St.dev.= 2)', color='blue', edgecolor='black')  
+
+h_x= np.array(range(0,10))
+ypoints = h_x ** 3                                     
+plt.plot(h_x, ypoints, color='red', label='h(x)=x3') 
+plt.title('Weekly Task 08', color='blue')              
+plt.xlabel('Variance', color='blue')
+plt.ylabel('Frequency', color='blue')
+plt.legend()
+plt.show()
+plt.savefig('Plot_task_1axis.png')
+```
+
+1. The second graph, Plot_task_2axis.png, utilizes both primary and secondary axiss. The histogram is plotted using the x and y axis, and the linear function is plotted on the z axis. This allows us to manipulate the exes to achieve the best visual output, without having to transform the data.
+
+```ruby
+import matplotlib.pyplot as plt            
+import numpy as np                          
+
+normal_data= np.random.normal(loc=5, scale= 2, size= 1000) 
+h_x= np.array(range(0,10))
+ypoints = h_x ** 3                        
+
+fig, ax1 = plt.subplots()                   
+ax1.hist(normal_data, label='Histogram of a normal distribution.\n(Mean= 5, St.dev.= 2)', color='blue', edgecolor='black' )                       
+ax1.set_xlabel('Values', color='blue')      
+ax1.set_ylabel('Frequency', color='blue')   
+ax2 = ax1.twinx()                           
+ax2.plot(h_x, ypoints, color='red', label='h(x)=x3') 
+ax2.set_ylabel('h(x)^3', color='blue')
+
+plt.title('Weekly Task 08', color='blue')                 
+plt.legend()
+plt.show()
+plt.savefig('Plot_task_2axis.png')
+```
