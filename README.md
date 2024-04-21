@@ -1,4 +1,4 @@
-# Repository of weekly tasks for the module: Programming and Scripting, 2024
+# Repository of weekly tasks for the module: Programming and Scripting, 2024 as part of the Higher Diploma in Science, Data Analytics.
 
 ## *Author: Laura Lyons*
 
