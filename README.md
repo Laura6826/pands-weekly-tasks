@@ -6,21 +6,24 @@
 
 ## **Table of contents**
 
-[Introduction](#introduction)\
-[How to get started](#how-to-get-started)
+1. [Introduction](#1-introduction)
+1. [How to get started](#how-to-get-started)
+1. [How to get help](#3-how-to-get-help)
+1. [How to contribute](#4-how-to-contribute)
+1. [Weekly Tasks.](#6-weekly-tasks)
 
-  1. [Week 01- Setting up the Environment](#week-01--helloworldpy)
-  2. [Week 02- Statements](#week-02---bankpy)
-  3. [Week 03- Variables](#week-03---accountspy)
-  4. [Week 04- Controlling the flow](#week-04---collatzpy)
-  5. [Week 05- Date](#week-05---weekdaypy)
-  6. [Week 06- Functions](#week-06---sqrtpy)
-  7. [Week 07- Files](#week-07---count_epy)
-  8. [Week 08- Looking ahead](#week-08---plottaskpy)
+    1. [Week 01- Setting up the Environment](#week-01--helloworldpy)
+    2. [Week 02- Statements](#week-02---bankpy)
+    3. [Week 03- Variables](#week-03---accountspy)
+    4. [Week 04- Controlling the flow](#week-04---collatzpy)
+    5. [Week 05- Date](#week-05---weekdaypy)
+    6. [Week 06- Functions](#week-06---sqrtpy)
+    7. [Week 07- Files](#week-07---count_epy)
+    8. [Week 08- Looking ahead](#week-08---plottaskpy)
 
 ***
 
-## **Introduction**
+## **1. Introduction**
 
 This repository is a collection of work, complete as part of the Higher Diploma in Science in Data Analytics, Module: Programming and Scripting.
 
@@ -30,7 +33,7 @@ This repository is collection of my weekly tasks, including some additional guid
 
 ***
 
-## **How to get started**
+## **2. How to get started**
 
 In order to run the files, you will need to ensure that you have access to the correct softwear.
 I would recommend downloading the following applications (ensuring sufficent space on your hard drive prior to installation):
@@ -40,7 +43,39 @@ Wikipedia defines Anaconda as;
 "*a distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment*".
 2. Visual Studio Code (this is a code editor made by Microsoft).
 
-***
+
+<u> Additions to *.gitignore*</u>
+
+A number of [additional files](https://github.com/github/gitignore/tree/main/Global) were added to my .gitignore prior to running the programmes:
+
+  1. python.gitignore
+  2. macOS..gitignore
+  3. VisualStudioCode.gitignore
+  4. Linux.gitignore
+  5. TeX.gitignore
+  6. Vim.gitignore
+
+
+## **3. How to get help**
+
+I have attached below,a number of helpful links, should you wish to extrapolate on any of the methods used within this project.
+
+1. [Anaconda](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf)
+1. [Visual Studio Code](https://code.visualstudio.com/Download)
+1. [w3schools](https://www.w3schools.com/)
+1. [Pandas](https://pandas.pydata.org/)
+1. [Numpy](https://numpy.org/)
+1. [Matplotlib.py](https://matplotlib.org/)
+1. [Seaborn](https://seaborn.pydata.org/)
+
+## **4. How to contribute**
+
+As this project was created to fufill an assessment requirement of the Programming and Scripting module, as part of the H.Dip in Science in Data Analytics, no contributions will be allowed, in order to comply with ATU Policy on [Plagiarism](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) and the [Student Code of Conduct](https://www.atu.ie/sites/default/files/2022-08/Student%20Code_Final_August_2022.pdf).
+
+Should you find any errors or have any recommendations , please submit a pull reuqest on GITHUB. or just wish to contact that author, you can do so at <maxwell6826@gmail.com>.
+
+
+## **5. Weekly Tasks**
 
 ## **Week 01** -helloworld.py
 
