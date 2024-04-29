@@ -540,8 +540,8 @@ The second plot involved creating a plot for the function  $$h(x)=x^3$$
 
 As the task stated that the integers should be within the range (0-10), we used *numpy* to help define the data set.
 
-- The data to be displayed on the x-axis was defined using the function, $$*h_x= np.array(range(0,10))*$$.
-- The data to be displayed on the x-axis was defined using the function, $$*ypoints = h_x**3* $$.
+- The data to be displayed on the x-axis was defined using the function, $$h_x= np.array(range(0,10))$$.
+- The data to be displayed on the x-axis was defined using the function, $$ypoints = h_x**3 $$.
 The plot was then created using the *plt.plot* function, as we wanted this data to be displayed as a line.
 
 A title, x  and y axis labels and a ledged added to the plot.
