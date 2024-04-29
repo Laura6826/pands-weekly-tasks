@@ -32,7 +32,7 @@ else:
     original_num= int(input('Please enter the number you wish to retrieve the square root of: '))
 
 estimate_sqrt = int(input(
-   'Step 2: Please enter an educated guess as to the squart root of your original number: '))
+   'Step 2: Please enter an educated guess as to the square root of your original number: '))
 
 answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
