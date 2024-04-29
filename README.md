@@ -35,8 +35,8 @@ This repository is collection of my weekly tasks, including some additional guid
 
 ## **2. How to get started**
 
-In order to run the files, you will need to ensure that you have access to the correct softwear.
-I would recommend downloading the following applications (ensuring sufficent space on your hard drive prior to installation):
+In order to run the files, you will need to ensure that you have access to the correct software.
+I would recommend downloading the following applications (ensuring sufficient space on your hard drive prior to installation):
 
 1. Anaconda (if Anaconda is too large, miniconda would also suffice).\
 Wikipedia defines Anaconda as;
@@ -58,7 +58,7 @@ A number of [additional files](https://github.com/github/gitignore/tree/main/Glo
 
 ## **3. How to get help**
 
-I have attached below,a number of helpful links, should you wish to extrapolate on any of the methods used within this project.
+I have attached a number of helpful links below, should you wish to extrapolate on any of the methods used within this project.
 
 1. [Anaconda](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf)
 1. [Visual Studio Code](https://code.visualstudio.com/Download)
@@ -70,29 +70,29 @@ I have attached below,a number of helpful links, should you wish to extrapolate 
 
 ## **4. How to contribute**
 
-As this project was created to fufill an assessment requirement of the Programming and Scripting module, as part of the H.Dip in Science in Data Analytics, no contributions will be allowed, in order to comply with ATU Policy on [Plagiarism](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) and the [Student Code of Conduct](https://www.atu.ie/sites/default/files/2022-08/Student%20Code_Final_August_2022.pdf).
+As this project was created to fufil an assessment requirement of the Programming and Scripting module, as part of the H.Dip in Science in Data Analytics, no contributions will be allowed, in order to comply with ATU Policy on [Plagiarism](https://www.atu.ie/sites/default/files/2024-02/aqae022-academic-integrity-policy-1.pdf) and the [Student Code of Conduct](https://www.atu.ie/sites/default/files/2022-08/Student%20Code_Final_August_2022.pdf).
 
-Should you find any errors or have any recommendations , please submit a pull reuqest on GITHUB. or just wish to contact that author, you can do so at <maxwell6826@gmail.com>.
+Should you find any errors or have any recommendations , please submit a pull request on Github. or just wish to contact that author, you can do so at <maxwell6826@gmail.com>.
 
 
 ## **5. Weekly Tasks**
 
 ## **Week 01** -helloworld.py
 
-**Asignment Instructions:**
+**Assignment Instructions:**
 
 1. Create a GitHub account and repository for:\
-  1st. Your own work, called 'pands-mywork'. This was not be assessed as part of the module.\
+  1st. Your own work, called 'pands-mywork'. This will not be assessed as part of the module.\
   2nd. Weekly tasks [pands-weekly-tasks](https://github.com/Laura6826/pands-weekly-tasks). The second repository was assessed and represent 50% of the overall grade for the module.
-2. Commit and push a file to the weekly tasks repository called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
+2. Commit and push a file to the weekly tasks repository, called helloworld.py. This file should contain a python program that displays Hello World! when it is run.
 
 **My notes:**
 
 - When installing Anaconda, make sure you check the PATH variable ; "*Add Anaconda3 to my PATH environment variable*'
-- When creating a Github account, ensure a personal email address that you will have continual access too is used. A college email address will be deactivated after graduation, if used when setting up a Git hub account, there maybe difficulties in accessing the Github account further down the line.
+- When creating a Github account, ensure a personal email address that you will have continual access too is used. A college email address will be deactivated after graduation, if used when setting up a Git hub account, there may be difficulties in accessing the Github account further down the line.
 - Once the account was set up on Github, 2 folders were created.
-    1. **pands_weekly_tasks**. Each week, a new folder was created as a subfolder within *pands_weekly_tasks*, to represent each weekly task and named accordingly. The URL for this folder was submitted on **Moodle** to allow for the correction of the tasks (totaling 50% of this modules mark).
-    2. **pands_my_work**. This folder was where all my personal work associated with each weeks leactures was stored.
+    1. **pands_weekly_tasks**. Each week, a new folder was created as a subfolder within *pands_weekly_tasks*, to represent each weekly task and named accordingly. The URL for this folder was submitted on **Moodle** to allow for the correction of the tasks (totalling 50% of this modules mark).
+    2. **pands_my_work**. This folder was where all my personal work associated with each weeks lectures, was stored.
 
 - Ensure care is taken when entering the output, *i.e.* you include appropriate spaces and colons.
 - The language identifier, *ruby* was used to enable [syntax highlighting](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) in the code blocks below.
@@ -111,7 +111,7 @@ print("Hello World!")
 
 ## **Week 02** - bank.py
 
-**Asignment Instructions:**
+**Assignment Instructions:**
 
 Write a program called bank.py.
 
@@ -124,15 +124,15 @@ The program should:
 **My notes:**
 
 - As the input is entered as a whole number, I divided by 100, to get the decimal point in the appropriate position. This is not the most appropriate method, i hope to come across a more suitable method as the course progresses.
-- I have since found out (Reference, Pof DA, Lecture 6.2, Exponential Notiation), that 123e-2= 1.23.
+- I have since found out (Reference, PofDA, Lecture 6.2, Exponential Notation), that 123e-2= 1.23.
 - Research was needed to find out how to code in the 'Euro' sign. The coding for the euro symbol: \N{euro sign}, was retrieved from stackoverflow.com (<https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python>).
 
 **When run:**
 
 - The user will be prompted: .
 
-  - Enter ammount 1 (in cents):  .
-  - Enter ammount 2 (in cents):  .
+  - Enter amount 1 (in cents):  .
+  - Enter amount 2 (in cents):  .
 
 - The program will print:
 
@@ -141,9 +141,9 @@ The program should:
 **Associated Code:**
 
 ```ruby
-ammount1 = int(input('Enter ammount 1 (in cents): '))     
-ammount2 = int(input('Enter ammount 2 (in cents): '))
-answer= ((ammount1+ammount2)* (10**-2)) 
+amount1 = int(input('Enter amount 1 (in cents): '))     
+amount2 = int(input('Enter amount 2 (in cents): '))
+answer= ((amount1+amount2)* (10**-2)) 
 print (f'The sum of these is: \N{euro sign}{answer}')
 ```
 
@@ -151,24 +151,24 @@ print (f'The sum of these is: \N{euro sign}{answer}')
 
 ## **Week 03** - accounts.py
 
-**Asignment Instructions:**\
-Write a python program called accounts.py that reads in a 10 character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
+**Assignment Instructions:**\
+Write a python program called accounts.py that reads in a 10-character account number and outputs the account number with only the last 4 digits showing (and the first 6 digits replaced with Xs).
 
 Extra:
 Modify the program to deal with account numbers of any length (comment your assumptions)
 
 **My notes:**
 
-- The **strip()** comand was used, to remove any uncessary white space.
-- The input was then'subdivided into two parts, the *hidden_account_part* and the *visisble_account_part*.
+- The **strip()** command was used, to remove any unnecessary white space.
+- The input was then subdivided into two parts, the *hidden_account_part* and the *visible_account_part*.
   - The length of the *hidden account part* will be determined by the using the **len()** code, minus 4, replaced the digits with x's.
   - The -4, will represent the *visible_account part*.
 - Splicing code is used to highlight the numbers that we want to be replaced by x's.
 - Negative splicing was used to replace the last 4 digits with x's, as technically, we cannot anticipate the number of digits the user might enter.
 - We used **isdigit()** command to ensure that the input was valid, and only contained integers.\ Reference: <https://www.w3schools.com/python/ref_string_isdigit.asp>
-- An **if** and **else** conditional statement was used to determine which reponse to print in the output.
+- An **if** and **else** conditional statement was used to determine which response to print in the output.
   - If the input is correct, print the account number, with all but the last 4 digits replaced by x's.
-  - If the input is incorrect, ie contains letters or symbols, print, *'Invalid account number entered. Please enter a valid account number.'*
+  - If the input is incorrect, *ie* contains letters or symbols, print, *'Invalid account number entered. Please enter a valid account number.'*
 
 **When run:**
 
@@ -214,7 +214,7 @@ else:
 
 ## **Week 04** - collatz.py
 
-**Asignment Instructions:**\
+**Assignment Instructions:**\
 Write a program, called collatz.py, that asks the user to input any positive integer and outputs the successive values of the following calculation.
 
 - At each step calculate the next value by taking the current value and,
@@ -222,7 +222,7 @@ Write a program, called collatz.py, that asks the user to input any positive int
 - But if it is odd, multiply it by three and add one.
 - The program will end if the current value is one.
 
-Push the program in your pands-weekly-tasks GitHub repository
+Push the program in your pands-weekly-tasks GitHub repository.
 
 **My notes:**
 
@@ -231,20 +231,20 @@ Push the program in your pands-weekly-tasks GitHub repository
 - To check if the number is odd or even, as these numbers will be 'treated differently', we use an **if** statement.
 - '**if** (x % 2) == 0', if, when x is divided by 2, it equals 0, we know this is an even number.
 - As instructed, Proceed to divide the number by 2.
-- And append the list named 'sequence', to refect the calculation applied. Reference: Lecture 5: List and Tuples and [O'Reilly (2015) A Whirlwind Tour of Python (pg:16)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
+- And append the list named 'sequence', to reflect the calculation applied. Reference: Lecture 5: List and Tuples and [O'Reilly (2015) A Whirlwind Tour of Python (pg:16)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
 - **else** assume the number is an odd number, as when 'x' is divided by 2 and the answer is not 0, the number entered must be an odd number.
 - Proceed to multiply the entered number by 3 and then add 1.
-- Append 'sequence', to refect the calculation applied.
+- Append 'sequence', to reflect the calculation applied.
 - Once all calculations are complete, and the current value is 1.
 - Return the sequence.
 
-Once the definition of the collatz_sequence was complete, we could proceed to use/ call this definition to ammend potential input.
+Once the definition of the collatz_sequence was complete, we could proceed to use/ call this definition to amend potential input.
 
 - It was requested for the user to 'Please enter a positive integer: '
 - To ensure that the input was a positive integer and not 0, a **while loop** was used.
-  - If the input did not meet the requirements, ie, a positive integer, the program would request another guess using the following prompt, 'That is not a positive integer. Please enter a positive integer:'
+  - If the input did not meet the requirements, *ie*, a positive integer, the program would request another guess using the following prompt, 'That is not a positive integer. Please enter a positive integer:'
   - An **else** conditional statement was then used, to call forward the function created and apply it to the input data.
-Finally, the output was printed, to include each digit generated through out the process, hence generating the collatz sequence for the originally entered digit.
+Finally, the output was printed, to include each digit generated throughout the process, hence generating the collatz sequence for the originally entered digit.
 
 **When run:**
 
@@ -280,7 +280,7 @@ else:
 
 ## **Week 05** - weekday.py
 
-**Asignment Instructions:**\
+**Assignment Instructions:**\
 Write a program that outputs whether or not today is a weekday. (The program should be called weekday.py)
 
 **My notes:**
@@ -291,10 +291,10 @@ Write a program that outputs whether or not today is a weekday. (The program sho
 - the tuple *name_of_day* was created to define the order of the weekdays, (0 = Monday, 6 = Sunday).
 - The variable *today* was created, to simplify the code.
 - An **for** statement was then applied and a range defined to distinguish weekdays [0:5].
-- If the day was identified as a weekend, the print out would read:
+- If the day was identified as a weekend, the printout would read:
   - *'Today is '*(name_of_day[day_of_week])*. Unfortunately this is a weekday, go back to work'*
 - All other variables within the range would be treated as the weekend using the *else* statement.
-- If the day was identified as the weekend, the print out would read as;
+- If the day was identified as the weekend, the printout would read as;
   - *'Today is '*(name_of_day[day_of_week])*'. Hurrah, go back to bed!'*
 
 **When run:**
@@ -327,7 +327,7 @@ else:
 
 ## **Week 06** - sqrt.py
 
-**Asignment Instructions:**\
+**Assignment Instructions:**\
 Write a program that takes a positive floating-point number as input and outputs an approximation of its square root.
 
 You should create a function called ***sqrt*** that does this.
@@ -342,57 +342,57 @@ The formula for Newtons method:
 square_root (original_number)= (((original_number/estimated_sqrt)+ estimated_sqrt)/2).
 ```
 
-- 2 seperate files were created.
+- 2 separate files were created.
    1. The first *sqrt.py*, used the math module to compare the estimate value to see how close the approximations were. This was so i could get to grips with what was needed to get the basics working.
-   1. The second file, *sqrt_no_mathmodule.py*, did not use formulas inported from the math module. Instead, defintions were created of the formulas necessary.
+   1. The second file, *sqrt_no_mathmodule.py*, did not use formulas imported from the math module. Instead, definitions were created of the formulas necessary.
 
 1. For *'sqrt.py'*:
 
 - The Math Module was downloaded to use as an initial reference.
-- The application of the Newton Method for square roots formula was extropolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
+- The application of the Newton Method for square roots formula was extrapolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
 - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
-- The definiation for *'newtons_method_sqrt'* was created, whereby the original number and an educated guess as to the squart root of the original number.
-  - An **if** and **else** conditional statement was used to determine which reponse to print in the output.
-  - If the input is correct, ie the calculated '*new_estimate'* was equal to the square root of the original estimate ( as calculated by the math module), then the number would be returned as the *'approx_sqrt'*.
-  - If the input is incorrect, ie the calculated '*new_estimate'* was not equal to the square root of the original estimate (as calculated by the math module), then the number would loop back into the def until it is equal to square root of the original estimate and returned as the *'approx_sqrt'*.
+- The definition for *'newtons_method_sqrt'* was created, whereby the original number and an educated guess as to the square root of the original number.
+  - An **if** and **else** conditional statement was used to determine which response to print in the output.
+  - If the input is correct, *ie* the calculated '*new_estimate'* was equal to the square root of the original estimate ( as calculated by the math module), then the number would be returned as the *'approx_sqrt'*.
+  - If the input is incorrect, *ie* the calculated '*new_estimate'* was not equal to the square root of the original estimate (as calculated by the math module), then the number would loop back into the def until it is equal to square root of the original estimate and returned as the *'approx_sqrt'*.
 
-- Once *'newtons_method_sqrt'* was defined, the user was promted to,*'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
+- Once *'newtons_method_sqrt'* was defined, the user was prompted to,*'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
 
 - The **'try, except'** statement was used to deal with potential exceptions, in this case, we need the entered integer to be positive. How to check if input is an integer was researched. Reference: <https://www.pythonpool.com/python-check-if-string-is-integer>.
-  - First we try converting the varible into an integer
+  - First, we try converting the variable into an integer
   - A break is added, to prevent the code from running indefinitely.
   - If the integer added was not a positive integer, the user was prompted with, *'Step 1: Please enter the number you wish to retrieve the square root of: '*
   - The user was then prompted again, *'Step 2: Please enter an educated guess as to the square root of your original number: '*
-- Both number prompted by the user were feed into the definition *'newtons_method_sqrt'*.
+- Both numbers prompted by the user were feed into the definition *'newtons_method_sqrt'*.
 - With the program returning. *'The approximate square root of {original_num} is {answer}'*
 
 2. For *sqrt_no_mathmodule.py*.
 
 - Similar to the above method:
-  - The application of the Newton Method for square roots formula was extropolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
+  - The application of the Newton Method for square roots formula was extrapolated from <https://stackoverflow.com/questions/70793490/how-do-i-calculate-square-root-in-python>.
   - The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/).
-  - The definition for *'newtons_method_sqrt'* was created, whereby the original number and an educated guess as to the squart root of the original number.
-- However on this occassion, the *math* module was not used. Instead a def was created where by the **is_close()** command is used, with a tolerance of 0.001. When the second number is within 0.001 of the first number, the function will return the absolute of the original number. This was pluged into the definition for *'newtons_method_sqrt'*
+  - The definition for *'newtons_method_sqrt'* was created, whereby the original number and an educated guess as to the square root of the original number.
+- However, on this occasion, the *math* module was not used. Instead, a **def** was created where by the **is_close()** command is used, with a tolerance of 0.001. When the second number is within 0.001 of the first number, the function will return the absolute of the original number. This was plugged into the definition for *'newtons_method_sqrt'*
 
-- Once *'newtons_method_sqrt'* was defined, the user was promted to,*'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
+- Once *'newtons_method_sqrt'* was defined, the user was prompted to: *'Step 1: Please enter the number you wish to retrieve the square root of: '*, which would be feed into the program as *'original_number'*.
 
 - The **'try, except'** statement was used to deal with potential exceptions, in this case, we need the entered integer to be positive. How to check if input is an integer was researched. Reference: <https://www.pythonpool.com/python-check-if-string-is-integer>.
-  - If the *'new_estimate'* is notnwithin 0.001 of the original number, ie is 'False', the *'new_estimate'* is looped back into the calculation until it is within 0.001 of the original number.
-  - First we try converting the varible into an integer
+  - If the *'new_estimate'* is not within 0.001 of the original number, *ie* is 'False', the *'new_estimate'* is looped back into the calculation until it is within 0.001 of the original number.
+  - First we try converting the variable into an integer
   - A break is added, to prevent the code from running indefinitely.
   - If the integer added was not a positive integer, the user was prompted with, *'Step 1: Please enter the number you wish to retrieve the square root of: '*
   - The user was then prompted again, *'Step 2: Please enter an educated guess as to the square root of your original number: '*
-- Both number prompted by the user were feed into the definition *'newtons_method_sqrt'*.
+- Both numbers prompted by the user were feed into the definition *'newtons_method_sqrt'*.
 - With the program returning. *'The approximate square root of {original_num} is {answer}'*
 
 **When run:**
 
 - The user will be prompted: .
-  - Step 1: Please enter the number you wish to retrieve the square root of: 25
+  - Step 1: Please enter the number you wish to retrieve the square root of: 25.
 - The programme will return:
   - That is a positive integer, please proceed to step 2.
 - The user will be prompted: .
-  - Step 2: Please enter an educated guess as to the squart root of your original number:6
+  - Step 2: Please enter an educated guess as to the square root of your original number: 6.
 - The programme will return:
   -The approximate square root of 36 is 6
 
@@ -429,8 +429,8 @@ estimate_sqrt = (int(input('Step 2: Please enter an educated guess as to the squ
 answer = newtons_method_sqrt (original_num, estimate_sqrt)
 print(f'The approximate square root of {original_num} is {answer}')
 ```
-
-2. The second file does not use the math module.
+***
+**2. The second file does not use the math module.**
 
 ```ruby
 def is_close(num1, num2, tolerance=0.001):  
@@ -466,27 +466,27 @@ print(f'The approximate square root of {original_num} is {answer}')
 
 ## **Week 07** - count_e.py
 
-**Asignment Instructions:**\
+**Assignment Instructions:**\
 Write a program that reads in a text file and outputs the number of e's it contains.
-The program should take the filename from an argument on the command line
+The program should take the filename from an argument on the command line.
 
 **My notes:**
 
-- The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/). It is necessary to create a module to count the number of 'e's in predefinied file.
+- The **def** function was used to break the task into manageable chunks, and it will only run when called upon. Reference: [O'Reilly (2015) A Whirlwind Tour of Python: Defining Functions (pg:42)](https://www.oreilly.com/content/a-whirlwind-tour-of-python/). It is necessary to create a module to count the number of 'e's in predefined file.
 - The **'try, except'** statement was used to deal with potential exceptions.
-- The file was opened with *'r'* , as this is read mode.We do not anticipate having to add anything text to the file, we just want to read in the text contained within the tile.
+- The file was opened with *'r'* , as this is read mode. We do not anticipate having to add anything text to the file, we just want to read in the text contained within the tile.
 - The **'f.read()'** command was used, to access the file content.
 - Research was needed to figure out how to count the number of 'e's present in the text. The source use for *'count()'* was <https://www.w3schools.com/python/ref_list_count.asp>.
-- **'.lower()'** was used to transform the text to be analyised into all lower case Reference: <https://www.w3schools.com/python/ref_list_count.asp>.
-- The exception *'FileNotFoundError'* was applied, should the user input an incorrect location for the text to be analyised.
-- The user was them prompted to enter the location of the file to be analyised: ''Please enter the location of the text file to be analyised: ', with any additional white space removed with the command, *'strip()'*.
-- The file submitted was run through the code, with the user recieving the following output: *'This file contains {e_occurrences} iterations of the letter 'e'.'*
+- **'.lower()'** was used to transform the text to be analysed into all lower case Reference: <https://www.w3schools.com/python/ref_list_count.asp>.
+- The exception *'FileNotFoundError'* was applied, should the user input an incorrect location for the text to be analysed.
+- The user was them prompted to enter the location of the file to be analysed: ''Please enter the location of the text file to be analysed: ', with any additional white space removed with the command, *'strip()'*.
+- The file submitted was run through the code, with the user receiving the following output: *'This file contains {e_occurrences} iterations of the letter 'e'.'*
 
 **When run:**
 
 - The user will be prompted: .
-  -Please enter the location of the text file to be analyised: .
- Once the user has entered a valid location for the file to be analyised, the program will print:
+  -Please enter the location of the text file to be analysed: .
+ Once the user has entered a valid location for the file to be analysed, the program will print:
   - This file contains 1260 iterations of the letter 'e'.
 
 **Associated Code:**
@@ -509,20 +509,20 @@ print(f"This file contains {e_occurrences} iterations of the letter 'e'.")
 
 ## **Week 08** - plottask.py
 
-**Asignment Instructions:**\
+**Assignment Instructions:**\
 Write a program called plottask.py that displays:
 
-- a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2,
+- a histogram of a normal distribution of 1000 values with a mean of 5 and standard deviation of 2,
 - and a plot of the function  h(x)=x3 in the range 0 to 10,
 ,on the one set of axes.
 
 **My notes:**\
-A number of libraries were imported to help with this weeks task.
+A number of libraries were imported to help with this week's task.
 
  1. matplotlib is used to create plots.
  2. Numpy was used to help generate random numbers.
 
-To help get my heaad around this weeks tasks, I subdivided the task into creating 2 different plots.
+To help get my head around this week's tasks, I subdivided the task into 2 smaller tasks and created 2 different plots.
 
 ### Plot 1
 
@@ -530,18 +530,18 @@ A random number generator was used to help generate the numbers needed for this 
 
 - *normal_data= np.random.normal (loc=5, scale= 2, size= 1000)*
 - where loc= mean/ average, scale = standard deviation, size= the number of values to be generated.
-The plot was then created using the *plt.hist* function. The color of the legend was defined and a black edge was applied to each of the bins to help differentiate each category.
+The plot was then created using the *plt.hist* function. The colour of the legend was defined, and a black edge was applied to each of the bins to help differentiate each category.
 
-Once the first plot was generated, and i was happy with the appearence of the plot,i started to research how to create plot 2.
+Once the first plot was generated, and I was happy with the appearance of the plot, I started to research how to create plot 2.
 
 ### Plot 2
 
-The second plot involved creating a plot for the function  *h(x)=x^3*
+The second plot involved creating a plot for the function  $$h(x)=x^3$$
 
-As the task stated that the integers should be within the range (0-10), we using *numpy* to help define the data set.
+As the task stated that the integers should be within the range (0-10), we used *numpy* to help define the data set.
 
-- The data to be displayed on the x-axis was defined using the function, *h_x= np.array(range(0,10))*.
-- The data to be displayed on the x-axis was defined using the function, *ypoints = h_x**3*.
+- The data to be displayed on the x-axis was defined using the function, $$*h_x= np.array(range(0,10))*$$.
+- The data to be displayed on the x-axis was defined using the function, $$*ypoints = h_x**3* $$.
 The plot was then created using the *plt.plot* function, as we wanted this data to be displayed as a line.
 
 A title, x  and y axis labels and a ledged added to the plot.
@@ -595,3 +595,6 @@ plt.legend()
 plt.show()
 plt.savefig('Plot_task_2axis.png')
 ```
+
+***
+### End
